@@ -187,17 +187,18 @@ function updateSidebarTimestamps(meta) {
         const dt = new Date(isoStr);
 
         if (!isNaN(dt.getTime())) {
-            const istFormatted = new Intl.DateTimeFormat('en-GB', {
-                timeZone: 'Asia/Kolkata',
+            const formatOptions = {
                 day: '2-digit', month: 'short', year: 'numeric',
                 hour: '2-digit', minute: '2-digit', hour12: true
-            }).format(dt);
+            };
 
-            const etFormatted = new Intl.DateTimeFormat('en-US', {
-                timeZone: 'America/New_York',
-                day: '2-digit', month: 'short', year: 'numeric',
-                hour: '2-digit', minute: '2-digit', hour12: true
-            }).format(dt);
+            const formatTz = (tz) => {
+                const str = new Intl.DateTimeFormat('en-GB', { timeZone: tz, ...formatOptions }).format(dt);
+                return str.replace(/\b(am|pm)\b/i, m => m.toUpperCase());
+            };
+
+            const istFormatted = formatTz('Asia/Kolkata');
+            const etFormatted = formatTz('America/New_York');
 
             if (elIst) elIst.textContent = istFormatted;
             if (elEt) elEt.textContent = etFormatted;
