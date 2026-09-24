@@ -1,78 +1,78 @@
 {
   "meta": {
-    "generated_at_utc": "2026-09-23 12:54:29 UTC",
-    "display_time": "23 Sep 2026, 06:24 PM",
+    "generated_at_utc": "2026-09-24 06:30:43 UTC",
+    "display_time": "24 Sep 2026, 06:30 AM",
     "status": "success"
   },
   "treasury": {
-    "latest_date": "2026-09-22",
-    "current_2y": 4.71,
-    "delta_2y": -0.05,
-    "current_10y": 4.96,
-    "delta_10y": 0.0,
-    "current_30y": 5.29,
-    "delta_30y": 0.0,
-    "current_spread_10_2": 0.25,
-    "delta_spread_10_2": 0.05,
+    "latest_date": "2026-09-23",
+    "current_2y": 4.85,
+    "delta_2y": 0.14,
+    "current_10y": 5.11,
+    "delta_10y": 0.15,
+    "current_30y": 5.4,
+    "delta_30y": 0.11,
+    "current_spread_10_2": 0.26,
+    "delta_spread_10_2": 0.01,
     "is_inverted": false,
     "current_curve": [
       {
         "tenor": "1M",
-        "rate": 3.97
+        "rate": 3.99
       },
       {
         "tenor": "2M",
-        "rate": 4.09
+        "rate": 4.1
       },
       {
         "tenor": "3M",
-        "rate": 4.16
+        "rate": 4.19
       },
       {
         "tenor": "4M",
-        "rate": 4.26
+        "rate": 4.3
       },
       {
         "tenor": "6M",
-        "rate": 4.26
+        "rate": 4.31
       },
       {
         "tenor": "1Y",
-        "rate": 4.43
+        "rate": 4.49
       },
       {
         "tenor": "2Y",
-        "rate": 4.71
+        "rate": 4.85
       },
       {
         "tenor": "3Y",
-        "rate": 4.81
+        "rate": 4.97
       },
       {
         "tenor": "5Y",
-        "rate": 4.83
+        "rate": 4.99
       },
       {
         "tenor": "7Y",
-        "rate": 4.89
+        "rate": 5.05
       },
       {
         "tenor": "10Y",
-        "rate": 4.96
+        "rate": 5.11
       },
       {
         "tenor": "20Y",
-        "rate": 5.33
+        "rate": 5.45
       },
       {
         "tenor": "30Y",
-        "rate": 5.29
+        "rate": 5.4
       }
     ],
     "curve_1m_ago": [
       {
         "tenor": "1M",
-        "rate": 3.8
+        "rate": 3.79
       },
       {
         "tenor": "2M",
@@ -80,7 +80,7 @@
       },
       {
         "tenor": "3M",
-        "rate": 3.88
+        "rate": 3.87
       },
       {
         "tenor": "4M",
@@ -88,11 +88,11 @@
       },
       {
         "tenor": "6M",
-        "rate": 3.95
+        "rate": 3.96
       },
       {
         "tenor": "1Y",
-        "rate": 4.03
+        "rate": 4.04
       },
       {
         "tenor": "2Y",
@@ -104,38 +104,38 @@
       },
       {
         "tenor": "5Y",
-        "rate": 4.43
+        "rate": 4.41
       },
       {
         "tenor": "7Y",
-        "rate": 4.57
+        "rate": 4.55
       },
       {
         "tenor": "10Y",
-        "rate": 4.74
+        "rate": 4.7
       },
       {
         "tenor": "20Y",
-        "rate": 5.25
+        "rate": 5.21
       },
       {
         "tenor": "30Y",
-        "rate": 5.27
+        "rate": 5.23
       }
     ],
-    "date_1m_ago": "2026-08-21",
+    "date_1m_ago": "2026-08-24",
     "curve_1y_ago": [
       {
         "tenor": "1M",
-        "rate": 4.19
+        "rate": 4.17
       },
       {
         "tenor": "2M",
-        "rate": 4.14
+        "rate": 4.13
       },
       {
         "tenor": "3M",
-        "rate": 4.03
+        "rate": 4.0
       },
       {
         "tenor": "4M",
@@ -147,38 +147,38 @@
       },
       {
         "tenor": "1Y",
-        "rate": 3.6
+        "rate": 3.61
       },
       {
         "tenor": "2Y",
-        "rate": 3.57
+        "rate": 3.61
       },
       {
         "tenor": "3Y",
-        "rate": 3.56
+        "rate": 3.59
       },
       {
         "tenor": "5Y",
-        "rate": 3.68
+        "rate": 3.71
       },
       {
         "tenor": "7Y",
-        "rate": 3.88
+        "rate": 3.9
       },
       {
         "tenor": "10Y",
-        "rate": 4.14
+        "rate": 4.15
       },
       {
         "tenor": "20Y",
-        "rate": 4.71
+        "rate": 4.73
       },
       {
         "tenor": "30Y",
-        "rate": 4.75
+        "rate": 4.77
       }
     ],
-    "date_1y_ago": "2025-09-19",
+    "date_1y_ago": "2025-09-22",
     "history": [
       {
         "date": "2022-01-03",
@@ -9619,6 +9619,14 @@
         "yield_30y": 5.29,
         "spread_10_2": 0.25,
         "spread_10_3m": 0.8
+      },
+      {
+        "date": "2026-09-23",
+        "yield_2y": 4.85,
+        "yield_10y": 5.11,
+        "yield_30y": 5.4,
+        "spread_10_2": 0.26,
+        "spread_10_3m": 0.92
       }
     ]
   },
@@ -19068,6 +19076,14 @@
         "yield_30y": 7.57,
         "spread_10_2": 0.64,
         "repo_rate": 5.25
+      },
+      {
+        "date": "2026-09-23",
+        "yield_2y": 6.39,
+        "yield_10y": 7.03,
+        "yield_30y": 7.57,
+        "spread_10_2": 0.64,
+        "repo_rate": 5.25
       }
     ]
   },
@@ -20016,17 +20032,13 @@
   "markets": {
     "USD_JPY": {
       "symbol": "JPY=X",
-      "current_price": 157.901,
-      "prev_day_price": 157.369,
-      "abs_change": 0.532,
-      "pct_change": 0.34,
-      "month_abs_change": -1.238,
-      "month_pct_change": -0.78,
+      "current_price": 158.395,
+      "prev_day_price": 157.464,
+      "abs_change": 0.931,
+      "pct_change": 0.59,
+      "month_abs_change": -0.828,
+      "month_pct_change": -0.52,
       "timeseries": [
-        {
-          "date": "2021-09-22",
-          "price": 109.822
-        },
         {
           "date": "2021-09-23",
           "price": 110.326
@@ -25220,8 +25232,12 @@
           "price": 157.369
         },
         {
-          "date": "2026-09-23",
-          "price": 157.901
+          "date": "2026-09-22",
+          "price": 157.464
+        },
+        {
+          "date": "2026-09-24",
+          "price": 158.395
         }
       ],
       "name": "USD / JPY",
@@ -25230,17 +25246,13 @@
     },
     "USD_INR": {
       "symbol": "USDINR=X",
-      "current_price": 95.74,
-      "prev_day_price": 95.712,
-      "abs_change": 0.028,
-      "pct_change": 0.03,
-      "month_abs_change": 0.017,
-      "month_pct_change": 0.02,
+      "current_price": 95.888,
+      "prev_day_price": 95.69,
+      "abs_change": 0.198,
+      "pct_change": 0.21,
+      "month_abs_change": 2.341,
+      "month_pct_change": 2.5,
       "timeseries": [
-        {
-          "date": "2021-09-22",
-          "price": 73.875
-        },
         {
           "date": "2021-09-23",
           "price": 73.84
@@ -30434,8 +30446,12 @@
           "price": 95.712
         },
         {
-          "date": "2026-09-23",
-          "price": 95.74
+          "date": "2026-09-22",
+          "price": 95.69
+        },
+        {
+          "date": "2026-09-24",
+          "price": 95.887
         }
       ],
       "name": "USD / INR",
@@ -30444,17 +30460,13 @@
     },
     "EUR_USD": {
       "symbol": "EURUSD=X",
-      "current_price": 1.141,
-      "prev_day_price": 1.146,
-      "abs_change": -0.005,
-      "pct_change": -0.45,
-      "month_abs_change": -0.026,
-      "month_pct_change": -2.24,
+      "current_price": 1.139,
+      "prev_day_price": 1.145,
+      "abs_change": -0.006,
+      "pct_change": -0.51,
+      "month_abs_change": -0.028,
+      "month_pct_change": -2.38,
       "timeseries": [
-        {
-          "date": "2021-09-22",
-          "price": 1.169
-        },
         {
           "date": "2021-09-23",
           "price": 1.174
@@ -35648,8 +35660,12 @@
           "price": 1.146
         },
         {
-          "date": "2026-09-23",
-          "price": 1.141
+          "date": "2026-09-22",
+          "price": 1.145
+        },
+        {
+          "date": "2026-09-24",
+          "price": 1.139
         }
       ],
       "name": "EUR / USD",
@@ -35658,17 +35674,13 @@
     },
     "GBP_USD": {
       "symbol": "GBPUSD=X",
-      "current_price": 1.327,
-      "prev_day_price": 1.337,
-      "abs_change": -0.01,
-      "pct_change": -0.74,
-      "month_abs_change": -0.037,
-      "month_pct_change": -2.71,
+      "current_price": 1.325,
+      "prev_day_price": 1.334,
+      "abs_change": -0.009,
+      "pct_change": -0.7,
+      "month_abs_change": -0.04,
+      "month_pct_change": -2.95,
       "timeseries": [
-        {
-          "date": "2021-09-22",
-          "price": 1.362
-        },
         {
           "date": "2021-09-23",
           "price": 1.372
@@ -40862,8 +40874,12 @@
           "price": 1.337
         },
         {
-          "date": "2026-09-23",
-          "price": 1.327
+          "date": "2026-09-22",
+          "price": 1.334
+        },
+        {
+          "date": "2026-09-24",
+          "price": 1.325
         }
       ],
       "name": "GBP / USD",
@@ -40872,17 +40888,13 @@
     },
     "SP500": {
       "symbol": "^GSPC",
-      "current_price": 7764.64,
-      "prev_day_price": 7650.5,
-      "abs_change": 114.14,
-      "pct_change": 1.49,
-      "month_abs_change": 123.48,
-      "month_pct_change": 1.62,
+      "current_price": 7706.03,
+      "prev_day_price": 7764.7,
+      "abs_change": -58.67,
+      "pct_change": -0.76,
+      "month_abs_change": 31.66,
+      "month_pct_change": 0.41,
       "timeseries": [
-        {
-          "date": "2021-09-23",
-          "price": 4448.98
-        },
         {
           "date": "2021-09-24",
           "price": 4455.48
@@ -45890,6 +45902,10 @@
         {
           "date": "2026-09-21",
           "price": 7764.7
+        },
+        {
+          "date": "2026-09-23",
+          "price": 7706.03
         }
       ],
       "name": "S&P 500",
@@ -45898,17 +45914,13 @@
     },
     "NASDAQ100": {
       "symbol": "^NDX",
-      "current_price": 30732.396,
-      "prev_day_price": 29644.17,
-      "abs_change": 1088.226,
-      "pct_change": 3.67,
-      "month_abs_change": 1519.236,
-      "month_pct_change": 5.2,
+      "current_price": 30470.293,
+      "prev_day_price": 30482.35,
+      "abs_change": -12.057,
+      "pct_change": -0.04,
+      "month_abs_change": 1161.434,
+      "month_pct_change": 3.96,
       "timeseries": [
-        {
-          "date": "2021-09-23",
-          "price": 15316.58
-        },
         {
           "date": "2021-09-24",
           "price": 15329.68
@@ -50916,6 +50928,10 @@
         {
           "date": "2026-09-21",
           "price": 30482.35
+        },
+        {
+          "date": "2026-09-23",
+          "price": 30470.289
         }
       ],
       "name": "Nasdaq 100",
@@ -50924,17 +50940,13 @@
     },
     "NIFTY50": {
       "symbol": "^NSEI",
-      "current_price": 23446.8,
-      "prev_day_price": 23414.301,
-      "abs_change": 32.499,
-      "pct_change": 0.14,
-      "month_abs_change": -805.2,
-      "month_pct_change": -3.32,
+      "current_price": 23195.0,
+      "prev_day_price": 23446.801,
+      "abs_change": -251.801,
+      "pct_change": -1.07,
+      "month_abs_change": -1024.051,
+      "month_pct_change": -4.23,
       "timeseries": [
-        {
-          "date": "2021-09-23",
-          "price": 17822.949
-        },
         {
           "date": "2021-09-24",
           "price": 17853.199
@@ -55870,6 +55882,10 @@
         {
           "date": "2026-09-23",
           "price": 23446.801
+        },
+        {
+          "date": "2026-09-24",
+          "price": 23195.0
         }
       ],
       "name": "Nifty 50",
@@ -55878,12 +55894,12 @@
     },
     "VIX": {
       "symbol": "^VIX",
-      "current_price": 14.29,
+      "current_price": 15.18,
       "prev_day_price": 14.87,
-      "abs_change": -0.58,
-      "pct_change": -3.9,
-      "month_abs_change": -1.56,
-      "month_pct_change": -9.84,
+      "abs_change": 0.31,
+      "pct_change": 2.08,
+      "month_abs_change": -0.67,
+      "month_pct_change": -4.23,
       "timeseries": [
         {
           "date": "2021-09-23",
@@ -60907,7 +60923,7 @@
         },
         {
           "date": "2026-09-23",
-          "price": 14.29
+          "price": 15.18
         }
       ],
       "name": "CBOE Volatility Index (VIX)",
@@ -60916,17 +60932,13 @@
     },
     "GOLD": {
       "symbol": "GC=F",
-      "current_price": 4340.9,
-      "prev_day_price": 4376.4,
-      "abs_change": -35.5,
-      "pct_change": -0.81,
-      "month_abs_change": -356.9,
-      "month_pct_change": -7.6,
+      "current_price": 4318.2,
+      "prev_day_price": 4318.4,
+      "abs_change": -0.2,
+      "pct_change": -0.0,
+      "month_abs_change": -376.3,
+      "month_pct_change": -8.02,
       "timeseries": [
-        {
-          "date": "2021-09-23",
-          "price": 1749.8
-        },
         {
           "date": "2021-09-24",
           "price": 1751.7
@@ -65953,7 +65965,11 @@
         },
         {
           "date": "2026-09-23",
-          "price": 4340.9
+          "price": 4318.4
+        },
+        {
+          "date": "2026-09-24",
+          "price": 4318.2
         }
       ],
       "name": "Gold (Comex)",
@@ -65962,17 +65978,13 @@
     },
     "BRENT_OIL": {
       "symbol": "BZ=F",
-      "current_price": 96.37,
-      "prev_day_price": 99.25,
-      "abs_change": -2.88,
-      "pct_change": -2.9,
-      "month_abs_change": 4.2,
-      "month_pct_change": 4.56,
+      "current_price": 98.25,
+      "prev_day_price": 103.08,
+      "abs_change": -4.83,
+      "pct_change": -4.69,
+      "month_abs_change": 9.67,
+      "month_pct_change": 10.92,
       "timeseries": [
-        {
-          "date": "2021-09-23",
-          "price": 77.25
-        },
         {
           "date": "2021-09-24",
           "price": 78.09
@@ -70999,7 +71011,11 @@
         },
         {
           "date": "2026-09-23",
-          "price": 96.37
+          "price": 103.08
+        },
+        {
+          "date": "2026-09-24",
+          "price": 98.25
         }
       ],
       "name": "Brent Crude Oil",
@@ -71008,17 +71024,13 @@
     },
     "WTI_OIL": {
       "symbol": "CL=F",
-      "current_price": 90.99,
-      "prev_day_price": 94.59,
-      "abs_change": -3.6,
-      "pct_change": -3.81,
-      "month_abs_change": 5.98,
-      "month_pct_change": 7.03,
+      "current_price": 92.24,
+      "prev_day_price": 92.16,
+      "abs_change": 0.08,
+      "pct_change": 0.09,
+      "month_abs_change": 9.88,
+      "month_pct_change": 12.0,
       "timeseries": [
-        {
-          "date": "2021-09-23",
-          "price": 73.3
-        },
         {
           "date": "2021-09-24",
           "price": 73.98
@@ -76041,7 +76053,11 @@
         },
         {
           "date": "2026-09-23",
-          "price": 90.99
+          "price": 92.16
+        },
+        {
+          "date": "2026-09-24",
+          "price": 92.24
         }
       ],
       "name": "WTI Crude Oil",
