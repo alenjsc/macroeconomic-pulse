@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macro Pulse — Global Macroeconomic & Investment Dashboard</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- FontAwesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- ApexCharts CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-brand">
+                <div class="brand-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <div class="brand-info">
+                    <h1>Macro Pulse</h1>
+                </div>
+            </div>
+            
+            <nav class="sidebar-menu">
+                <div class="nav-item active" data-tab="overview">
+                    <i class="fa-solid fa-gauge-high"></i>
+                    <span>Overview Cockpit</span>
+                </div>
+                <div class="nav-item" data-tab="yields">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Yield Curve & Rates</span>
+                </div>
+                <div class="nav-item" data-tab="fx">
+                    <i class="fa-solid fa-money-bill-transfer"></i>
+                    <span>Exchange Rates (FX)</span>
+                </div>
+                <div class="nav-item" data-tab="inflation">
+                    <i class="fa-solid fa-fire-flame-curved"></i>
+                    <span>US & India Inflation</span>
+                </div>
+                <div class="nav-item" data-tab="benchmarks">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>Global Benchmarks</span>
+                </div>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <div class="status-indicator-box">
+                    <div class="pulse-dot"></div>
+                    <span id="sidebarStatusText">Live Data Feed</span>
+                </div>
+                <div style="font-size: 11px; color: var(--text-on-sidebar-muted);" id="sidebarLastUpdated">
+                    Updated: Loading...
+                </div>
+                <button class="btn-update-now" id="btnUpdateData" title="Fetch fresh data from official sources">
+                    <i class="fa-solid fa-rotate"></i>
+                    <span>Update Data</span>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            
+            <!-- Header Bar -->
+            <header class="main-header">
+                <div class="header-left">
+                    <button class="mobile-toggle" id="sidebarToggle">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="header-title">
+                        <h2 id="viewHeading">Macroeconomic Overview</h2>
+                        <p id="viewDescription">Real-time indicators across US yield curve, FX valuations, inflation, and global benchmarks.</p>
+                    </div>
+                </div>
+
+                <!-- Global Timeframe Range Selector -->
+                <div class="timeframe-filter">
+                    <span class="timeframe-label">Range</span>
+                    <button class="range-btn" data-range="1M">1M</button>
+                    <button class="range-btn" data-range="6M">6M</button>
+                    <button class="range-btn active" data-range="1Y">1Y</button>
+                    <button class="range-btn" data-range="3Y">3Y</button>
+                    <button class="range-btn" data-range="5Y">5Y</button>
+                    <button class="range-btn" data-range="ALL">All</button>
+                </div>
+            </header>
+
+            <!-- ============================================================
+                 TAB 1: OVERVIEW COCKPIT
+            ============================================================ -->
+            <section id="tab-overview" class="tab-content active">
+                
+                <!-- KPI Executive Grid -->
+                <div class="kpi-grid">
+                    <!-- 10Y Yield -->
+                    <div class="kpi-card">
+                        <div class="kpi-card-header">
+                            <span class="kpi-title">US 10Y Yield</span>
+                            <span class="kpi-badge badge-neutral" id="kpiTenorLabel">10-Year Par</span>
+                        </div>
+                        <div class="kpi-value-row">
+                            <div class="kpi-value" id="kpi10YVal">—</div>
+                            <span class="kpi-unit">%</span>
+                        </div>
+                        <div class="kpi-subtext">
+                            <span class="delta-pill" id="kpi10YDelta">—</span>
+                            <span>vs previous close</span>
+                        </div>
+                    </div>
+
+                    <!-- 10Y - 2Y Spread -->
+                    <div class="kpi-card">
+                        <div class="kpi-card-header">
+                            <span class="kpi-title">10Y – 2Y Spread</span>
+                            <span class="kpi-badge badge-success" id="kpiSpreadBadge">Normal</span>
+                        </div>
+                        <div class="kpi-value-row">
+                            <div class="kpi-value" id="kpiSpreadVal">—</div>
+                            <span class="kpi-unit">bps</span>
+                        </div>
+                        <div class="kpi-subtext">
+                            <span class="delta-pill" id="kpiSpreadDelta">—</span>
+                            <span>recession barometer</span>
+                        </div>
+                    </div>
+
+                    <!-- USD / JPY -->
+                    <div class="kpi-card">
+                        <div class="kpi-card-header">
+                            <span class="kpi-title">USD / JPY</span>
+                            <span class="kpi-badge badge-neutral">Yen Valuation</span>
+                        </div>
+                        <div class="kpi-value-row">
+                            <div class="kpi-value" id="kpiJpyVal">—</div>
+                            <span class="kpi-unit">¥</span>
+                        </div>
+                        <div class="kpi-subtext">
+                            <span class="delta-pill" id="kpiJpyDelta">—</span>
+                            <span>daily change</span>
+                        </div>
+                    </div>
+
+                    <!-- USD / INR -->
+                    <div class="kpi-card">
+                        <div class="kpi-card-header">
+                            <span class="kpi-title">USD / INR</span>
+                            <span class="kpi-badge badge-neutral">Rupee Valuation</span>
+                        </div>
+                        <div class="kpi-value-row">
+                            <div class="kpi-value" id="kpiInrVal">—</div>
+                            <span class="kpi-unit">₹</span>
+                        </div>
+                        <div class="kpi-subtext">
+                            <span class="delta-pill" id="kpiInrDelta">—</span>
+                            <span>daily change</span>
+                        </div>
+                    </div>
+
+                    <!-- US Inflation CPI-U -->
+                    <div class="kpi-card">
+                        <div class="kpi-card-header">
+                            <span class="kpi-title">US CPI Headline</span>
+                            <span class="kpi-badge badge-warning" id="kpiUsCpiBadge">Fed Target: 2.0%</span>
+                        </div>
+                        <div class="kpi-value-row">
+                            <div class="kpi-value" id="kpiUsCpiVal">—</div>
+                            <span class="kpi-unit">% YoY</span>
+                        </div>
+                        <div class="kpi-subtext">
+                            <span class="delta-pill" id="kpiUsCpiDelta">—</span>
+                            <span id="kpiUsCpiPeriod">latest print</span>
+                        </div>
+                    </div>
+
+                    <!-- India CPI Combined -->
+                    <div class="kpi-card">
+                        <div class="kpi-card-header">
+                            <span class="kpi-title">India CPI Combined</span>
+                            <span class="kpi-badge badge-success" id="kpiIndiaCpiBadge">RBI Target: 4.0%</span>
+                        </div>
+                        <div class="kpi-value-row">
+                            <div class="kpi-value" id="kpiIndiaCpiVal">—</div>
+                            <span class="kpi-unit">% YoY</span>
+                        </div>
+                        <div class="kpi-subtext">
+                            <span class="delta-pill" id="kpiIndiaCpiDelta">—</span>
+                            <span id="kpiIndiaCpiPeriod">latest print</span>
+                        </div>
+                    </div>
+
+                    <!-- Gold (COMEX) -->
+                    <div class="kpi-card">
+                        <div class="kpi-card-header">
+                            <span class="kpi-title">Gold (COMEX)</span>
+                            <span class="kpi-badge badge-warning">Commodities</span>
+                        </div>
+                        <div class="kpi-value-row">
+                            <div class="kpi-value" id="kpiGoldVal">—</div>
+                            <span class="kpi-unit">$/oz</span>
+                        </div>
+                        <div class="kpi-subtext">
+                            <span class="delta-pill" id="kpiGoldDelta">—</span>
+                            <span>daily change</span>
+                        </div>
+                    </div>
+
+                    <!-- Brent Crude Oil -->
+                    <div class="kpi-card">
+                        <div class="kpi-card-header">
+                            <span class="kpi-title">Brent Crude Oil</span>
+                            <span class="kpi-badge badge-neutral">Energy</span>
+                        </div>
+                        <div class="kpi-value-row">
+                            <div class="kpi-value" id="kpiBrentVal">—</div>
+                            <span class="kpi-unit">$/bbl</span>
+                        </div>
+                        <div class="kpi-subtext">
+                            <span class="delta-pill" id="kpiBrentDelta">—</span>
+                            <span>daily change</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Overview Charts Row 1 -->
+                <div class="charts-grid-2col">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title-group">
+                                <h3><i class="fa-solid fa-chart-spline" style="color: var(--color-primary);"></i> US Treasury Yield Curve Shape</h3>
+                                <p>Current Yield Curve vs 1-Month Ago vs 1-Year Ago (US Dept of the Treasury)</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div id="chart-overview-curve" style="min-height: 330px;"></div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title-group">
+                                <h3><i class="fa-solid fa-chart-area" style="color: var(--color-purple);"></i> 10Y – 2Y Spread & Inversion Cycle</h3>
+                                <p>Historical spread with inverted threshold zone (below 0.0%)</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div id="chart-overview-spread" style="min-height: 330px;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Overview Charts Row 2 -->
+                <div class="charts-grid-2col">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title-group">
+                                <h3><i class="fa-solid fa-dollar-sign" style="color: var(--color-info);"></i> Currency Trajectories (USD/JPY & USD/INR)</h3>
+                                <p>Relative exchange rate trend over selected timeframe</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div id="chart-overview-fx" style="min-height: 330px;"></div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title-group">
+                                <h3><i class="fa-solid fa-fire" style="color: var(--color-warning);"></i> US vs India Headline Inflation Trend</h3>
+                                <p>Year-over-Year Inflation Trajectory with Central Bank Policy Target Lines</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div id="chart-overview-inflation" style="min-height: 330px;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Market Benchmarks Quick Summary Strip -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title-group">
+                            <h3><i class="fa-solid fa-table-list" style="color: var(--color-success);"></i> Global Benchmarks & Asset Snapshot</h3>
+                            <p>Equities, Volatility, Commodities, and FX latest market metrics</p>
+                        </div>
+                    </div>
+                    <div class="card-body" style="padding: 0;">
+                        <div class="data-table-container">
+                            <table class="macro-table" id="overviewBenchmarksTable">
+                                <thead>
+                                    <tr>
+                                        <th>Asset</th>
+                                        <th>Category</th>
+                                        <th>Current Price</th>
+                                        <th>1-Month Change</th>
+                                        <th>1-Month % Change</th>
+                                        <th>52-Wk Range Position</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Populated dynamically -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- ============================================================
+                 TAB 2: YIELD CURVE & RATES
+            ============================================================ -->
+            <section id="tab-yields" class="tab-content">
+                
+                <!-- Inversion Status Banner -->
+                <div class="inversion-alert normal" id="inversionBanner">
+                    <div class="inversion-content">
+                        <i class="fa-solid fa-circle-check" id="inversionIcon"></i>
+                        <div class="inversion-text">
+                            <h4 id="inversionHeading">Normal Sloping Yield Curve</h4>
+                            <p id="inversionDescription">The 10-Year yield exceeds the 2-Year yield. The yield curve is not currently inverted.</p>
+                        </div>
+                    </div>
+                    <div style="font-size: 13px; font-weight: 700;" id="inversionSpreadBadge">+25 bps</div>
+                </div>
+
+                <!-- Tenors Ribbon Strip -->
+                <div class="tenor-strip" id="tenorStripContainer">
+                    <!-- Populated dynamically with 1M through 30Y -->
+                </div>
+
+                <!-- Full Curve Comparison Chart -->
+                <div class="card" style="margin-bottom: 24px;">
+                    <div class="card-header">
+                        <div class="card-title-group">
+                            <h3><i class="fa-solid fa-wave-pulse" style="color: var(--color-primary);"></i> US Treasury Par Yield Curve Morphology</h3>
+                            <p>Comparing Current Curve vs 1 Month Ago vs 1 Year Ago across all maturities (1M to 30Y)</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div id="chart-yield-curve-detailed" style="min-height: 380px;"></div>
+                    </div>
+                </div>
+
+                <!-- Historical 2Y, 10Y, 30Y and Spread Charts -->
+                <div class="charts-grid-2col">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title-group">
+                                <h3><i class="fa-solid fa-chart-line" style="color: var(--color-primary);"></i> 2Y, 10Y & 30Y Benchmark Yields</h3>
+                                <p>Historical daily path of key short, medium, and long-term US Treasury rates</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div id="chart-tenors-history" style="min-height: 340px;"></div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title-group">
+                                <h3><i class="fa-solid fa-scale-unbalanced" style="color: var(--color-danger);"></i> 10Y–2Y Yield Spread History</h3>
+                                <p>Negative values indicate yield curve inversion (recession warning signal)</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div id="chart-spread-history-detailed" style="min-height: 340px;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- India Sovereign Yields & RBI Repo Rate Section -->
+                <div class="charts-grid-2col" style="margin-top: 24px;">
+                    <!-- India Benchmark G-Sec Yields (Under US Benchmark Yields) -->
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title-group">
+                                <h3><i class="fa-solid fa-chart-line" style="color: #f59e0b;"></i> India Benchmark G-Sec Yields (2Y, 10Y & 30Y)</h3>
+                                <p>Government of India benchmark bond yields across key maturities</p>
+                            </div>
+                            <div class="kpi-badge badge-neutral" id="india10yCurrentBadge">10Y: Loading...</div>
+                        </div>
+                        <div class="card-body">
+                            <div id="chart-india-gsec-history" style="min-height: 340px;"></div>
+                        </div>
+                    </div>
+
+                    <!-- RBI Policy Repo Rate (Under US Yield Spread History) -->
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title-group">
+                                <h3><i class="fa-solid fa-building-columns" style="color: #10b981;"></i> RBI Policy Repo Rate History</h3>
+                                <p>Reserve Bank of India Monetary Policy Committee policy benchmark rate</p>
+                            </div>
+                            <div class="kpi-badge badge-success" id="rbiRepoBadge">Repo: Loading...</div>
+                        </div>
+                        <div class="card-body">
+                            <div id="chart-rbi-repo-history" style="min-height: 340px;"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- ============================================================
+                 TAB 3: EXCHANGE RATES (FX)
+            ============================================================ -->
+            <section id="tab-fx" class="tab-content">
+                
+                <!-- 4 Major Currencies Grid -->
+                <div class="charts-grid-2col">
+                    <!-- USD/JPY -->
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title-group">
+                                <h3><i class="fa-solid fa-yen-sign" style="color: var(--color-purple);"></i> USD / JPY (Japanese Yen)</h3>
+                                <p>Value of US Dollar relative to Japanese Yen</p>
+                            </div>
+                            <div class="kpi-badge badge-neutral" id="jpyCurrentBadge">Loading...</div>
+                        </div>
+                        <div class="card-body">
+                            <div id="chart-usdjpy-detailed" style="min-height: 340px;"></div>
+                        </div>
+                    </div>
+
+                    <!-- USD/INR -->
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title-group">
+                                <h3><i class="fa-solid fa-indian-rupee-sign" style="color: var(--color-info);"></i> USD / INR (Indian Rupee)</h3>
+                                <p>Value of US Dollar relative to Indian Rupee</p>
+                            </div>
+                            <div class="kpi-badge badge-neutral" id="inrCurrentBadge">Loading...</div>
+                        </div>
+                        <div class="card-body">
+                            <div id="chart-usdinr-detailed" style="min-height: 340px;"></div>
+                        </div>
+                    </div>
+
+                    <!-- EUR/USD -->
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title-group">
+                                <h3><i class="fa-solid fa-euro-sign" style="color: var(--color-primary);"></i> EUR / USD (Euro)</h3>
+                                <p>Value of Euro relative to US Dollar</p>
+                            </div>
+                            <div class="kpi-badge badge-neutral" id="eurCurrentBadge">Loading...</div>
+                        </div>
+                        <div class="card-body">
+                            <div id="chart-eurusd-detailed" style="min-height: 340px;"></div>
+                        </div>
+                    </div>
+
+                    <!-- GBP/USD -->
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title-group">
+                                <h3><i class="fa-solid fa-sterling-sign" style="color: #10b981;"></i> GBP / USD (British Pound)</h3>
+                                <p>Value of British Pound relative to US Dollar</p>
+                            </div>
+                            <div class="kpi-badge badge-neutral" id="gbpCurrentBadge">Loading...</div>
+                        </div>
+                        <div class="card-body">
+                            <div id="chart-gbpusd-detailed" style="min-height: 340px;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Currency Valuation Summary Card -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title-group">
+                            <h3><i class="fa-solid fa-arrow-right-arrow-left" style="color: var(--color-primary);"></i> FX 52-Week Ranges & Valuation Context</h3>
+                            <p>High and low valuation thresholds across the 4 major tracked currency pairs</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="fx-range-grid">
+                            <div class="kpi-card" style="border: none; background: #f8fafc;">
+                                <span class="kpi-title">USD / JPY 52-Wk Range</span>
+                                <div class="kpi-value" style="font-size: 20px; margin-top: 6px;" id="fxJpyRange">—</div>
+                                <div class="kpi-subtext" id="fxJpyRangeSub">Calculated from daily prices</div>
+                            </div>
+                            <div class="kpi-card" style="border: none; background: #f8fafc;">
+                                <span class="kpi-title">USD / INR 52-Wk Range</span>
+                                <div class="kpi-value" style="font-size: 20px; margin-top: 6px;" id="fxInrRange">—</div>
+                                <div class="kpi-subtext" id="fxInrRangeSub">Calculated from daily prices</div>
+                            </div>
+                            <div class="kpi-card" style="border: none; background: #f8fafc;">
+                                <span class="kpi-title">EUR / USD 52-Wk Range</span>
+                                <div class="kpi-value" style="font-size: 20px; margin-top: 6px;" id="fxEurRange">—</div>
+                                <div class="kpi-subtext" id="fxEurRangeSub">Calculated from daily prices</div>
+                            </div>
+                            <div class="kpi-card" style="border: none; background: #f8fafc;">
+                                <span class="kpi-title">GBP / USD 52-Wk Range</span>
+                                <div class="kpi-value" style="font-size: 20px; margin-top: 6px;" id="fxGbpRange">—</div>
+                                <div class="kpi-subtext" id="fxGbpRangeSub">Calculated from daily prices</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- ============================================================
+                 TAB 4: US & INDIA INFLATION
+            ============================================================ -->
+            <section id="tab-inflation" class="tab-content">
+                
+                <div class="charts-grid-2col">
+                    <!-- US Inflation Card -->
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title-group">
+                                <h3><i class="fa-solid fa-flag-usa" style="color: #ef4444;"></i> US Inflation Dynamics (BLS CPI)</h3>
+                                <p>Headline CPI-U vs Core CPI (ex-Food & Energy) vs 2.0% Fed Target</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div id="chart-us-inflation-detailed" style="min-height: 360px;"></div>
+                        </div>
+                    </div>
+
+                    <!-- India Inflation Card -->
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title-group">
+                                <h3><i class="fa-solid fa-flag" style="color: #f59e0b;"></i> India Inflation Dynamics (MoSPI / RBI)</h3>
+                                <p>CPI-Combined vs Consumer Food Price Index (CFPI) vs Wholesale Price Index (WPI)</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div id="chart-india-inflation-detailed" style="min-height: 360px;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inflation Breakdown Table -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title-group">
+                            <h3><i class="fa-solid fa-list-check" style="color: var(--color-primary);"></i> Inflation Rates Comparison & Targets</h3>
+                            <p>Latest official releases from U.S. Bureau of Labor Statistics & Ministry of Statistics and Programme Implementation</p>
+                        </div>
+                    </div>
+                    <div class="card-body" style="padding: 0;">
+                        <table class="macro-table">
+                            <thead>
+                                <tr>
+                                    <th>Region</th>
+                                    <th>Indicator</th>
+                                    <th>Latest Print</th>
+                                    <th>Previous Month</th>
+                                    <th>MoM Delta</th>
+                                    <th>Policy Target</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="inflationSummaryTableBody">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- ============================================================
+                 TAB 5: GLOBAL BENCHMARKS & COMMODITIES
+            ============================================================ -->
+            <section id="tab-benchmarks" class="tab-content">
+                
+                <div class="card" style="margin-bottom: 24px;">
+                    <div class="card-header">
+                        <div class="card-title-group">
+                            <h3><i class="fa-solid fa-chart-line-up" style="color: var(--color-primary);"></i> Equity Benchmarks Performance (Normalized % Return)</h3>
+                            <p>Comparing S&P 500, Nasdaq 100, and India Nifty 50 percentage gains over selected range</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div id="chart-equities-comparison" style="min-height: 360px;"></div>
+                    </div>
+                </div>
+
+                <div class="charts-grid-3col">
+                    <!-- VIX Card -->
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title-group">
+                                <h3><i class="fa-solid fa-heart-pulse" style="color: var(--color-danger);"></i> VIX Volatility Index</h3>
+                                <p>CBOE S&P 500 Volatility</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div id="chart-vix-detailed" style="min-height: 250px;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Gold Card -->
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title-group">
+                                <h3><i class="fa-solid fa-coins" style="color: #eab308;"></i> Gold (COMEX)</h3>
+                                <p>$/Troy Ounce</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div id="chart-gold-detailed" style="min-height: 250px;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Crude Oil Card -->
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title-group">
+                                <h3><i class="fa-solid fa-oil-well" style="color: var(--color-secondary);"></i> Crude Oil (Brent vs WTI)</h3>
+                                <p>$/Barrel</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div id="chart-oil-detailed" style="min-height: 250px;"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Load Local MACRO_DATA Script -->
+    <script src="data.js"></script>
+    <!-- Core Application Logic -->
+    <script src="app.js"></script>
+
+</body>
+</html>
