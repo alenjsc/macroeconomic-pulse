@@ -638,10 +638,25 @@ def main():
     start_time = time.time()
     now_utc = datetime.datetime.now(datetime.timezone.utc)
     timestamp_str = now_utc.strftime("%Y-%m-%d %H:%M:%S UTC")
-    display_time_str = datetime.datetime.now().strftime("%d %b %Y, %I:%M %p")
+
+    # IST: UTC + 5:30
+    ist_tz = datetime.timezone(datetime.timedelta(hours=5, minutes=30))
+    now_ist = now_utc.astimezone(ist_tz)
+    ist_str = now_ist.strftime("%d %b %Y, %I:%M %p")
+
+    # ET: US Eastern Time
+    try:
+        import zoneinfo
+        et_tz = zoneinfo.ZoneInfo("America/New_York")
+        now_et = now_utc.astimezone(et_tz)
+    except Exception:
+        et_tz = datetime.timezone(datetime.timedelta(hours=-4))
+        now_et = now_utc.astimezone(et_tz)
+    et_str = now_et.strftime("%d %b %Y, %I:%M %p")
 
     print(f"==================================================")
     print(f"MACROECONOMIC INDICATORS DATA UPDATE - {timestamp_str}")
+    print(f"IST: {ist_str} | ET: {et_str}")
     print(f"==================================================")
 
     # 1. US Treasury Yields
@@ -664,7 +679,9 @@ def main():
     macro_bundle = {
         'meta': {
             'generated_at_utc': timestamp_str,
-            'display_time': display_time_str,
+            'display_time_ist': ist_str,
+            'display_time_et': et_str,
+            'display_time': ist_str,
             'status': 'success'
         },
         'treasury': treasury_data,

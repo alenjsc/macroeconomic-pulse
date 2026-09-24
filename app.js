@@ -136,9 +136,9 @@ function initDashboard() {
 
     const { meta, treasury, india_rates, us_inflation, india_inflation, markets } = MACRO_DATA;
 
-    // Sidebar footer updates
+    // Sidebar footer dual timezone timestamps (IST & ET)
     if (meta) {
-        document.getElementById('sidebarLastUpdated').textContent = `Updated: ${meta.display_time || meta.generated_at_utc}`;
+        updateSidebarTimestamps(meta);
     }
 
     // Populate Top Executive KPIs (2x4 Matrix: 8 Cards)
@@ -159,6 +159,56 @@ function initDashboard() {
 
     // Setup Event Listeners
     setupEventListeners();
+}
+
+function updateSidebarTimestamps(meta) {
+    const elStatus = document.getElementById('sidebarStatusText');
+    if (elStatus) elStatus.textContent = 'Macro Data Feed';
+
+    const elIst = document.getElementById('sidebarTimeIST');
+    const elEt = document.getElementById('sidebarTimeET');
+
+    // 1. If pre-computed in fetch_data.py
+    if (meta.display_time_ist && meta.display_time_et) {
+        if (elIst) elIst.textContent = meta.display_time_ist;
+        if (elEt) elEt.textContent = meta.display_time_et;
+        return;
+    }
+
+    // 2. Dynamic browser formatting of UTC timestamp
+    const utcStr = meta.generated_at_utc || meta.display_time;
+    if (!utcStr) return;
+
+    try {
+        let isoStr = utcStr;
+        if (utcStr.includes(' UTC')) {
+            isoStr = utcStr.replace(' UTC', 'Z').replace(' ', 'T');
+        }
+        const dt = new Date(isoStr);
+
+        if (!isNaN(dt.getTime())) {
+            const istFormatted = new Intl.DateTimeFormat('en-GB', {
+                timeZone: 'Asia/Kolkata',
+                day: '2-digit', month: 'short', year: 'numeric',
+                hour: '2-digit', minute: '2-digit', hour12: true
+            }).format(dt);
+
+            const etFormatted = new Intl.DateTimeFormat('en-US', {
+                timeZone: 'America/New_York',
+                day: '2-digit', month: 'short', year: 'numeric',
+                hour: '2-digit', minute: '2-digit', hour12: true
+            }).format(dt);
+
+            if (elIst) elIst.textContent = istFormatted;
+            if (elEt) elEt.textContent = etFormatted;
+            return;
+        }
+    } catch (e) {
+        console.warn('Error formatting timestamps:', e);
+    }
+
+    if (elIst) elIst.textContent = meta.display_time || meta.generated_at_utc || '—';
+    if (elEt) elEt.textContent = '—';
 }
 
 function populateKPIs(treasury, us_inf, ind_inf, markets) {
@@ -1524,14 +1574,6 @@ function setupEventListeners() {
     if (toggleBtn && sidebar) {
         toggleBtn.addEventListener('click', () => {
             sidebar.classList.toggle('open');
-        });
-    }
-
-    // 4. Update Now button
-    const btnUpdate = document.getElementById('btnUpdateData');
-    if (btnUpdate) {
-        btnUpdate.addEventListener('click', () => {
-            alert("To fetch the latest live data from official feeds:\n\n1. Double-click 'update_dashboard.bat' in this folder, OR\n2. Run 'python fetch_data.py' in terminal.\n\nThen refresh this page to see the new data!");
         });
     }
 }

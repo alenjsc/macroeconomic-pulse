@@ -55,15 +55,19 @@
             <div class="sidebar-footer">
                 <div class="status-indicator-box">
                     <div class="pulse-dot"></div>
-                    <span id="sidebarStatusText">Live Data Feed</span>
+                    <span id="sidebarStatusText">Macro Data Feed</span>
                 </div>
-                <div style="font-size: 11px; color: var(--text-on-sidebar-muted);" id="sidebarLastUpdated">
-                    Updated: Loading...
+                <div class="sidebar-timestamp-box">
+                    <div class="timestamp-heading">Last Updated</div>
+                    <div class="timestamp-row">
+                        <span class="timestamp-zone">IST</span>
+                        <span class="timestamp-time" id="sidebarTimeIST">Loading...</span>
+                    </div>
+                    <div class="timestamp-row">
+                        <span class="timestamp-zone">ET</span>
+                        <span class="timestamp-time" id="sidebarTimeET">Loading...</span>
+                    </div>
                 </div>
-                <button class="btn-update-now" id="btnUpdateData" title="Fetch fresh data from official sources">
-                    <i class="fa-solid fa-rotate"></i>
-                    <span>Update Data</span>
-                </button>
             </div>
         </aside>
 
