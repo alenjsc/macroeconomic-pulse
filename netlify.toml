@@ -13,13 +13,13 @@
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
 
-# Cache static assets cleanly
+# Ensure styles and app logic revalidate immediately on deployment
 [[headers]]
   for = "/styles.css"
   [headers.values]
-    Cache-Control = "public, max-age=3600"
+    Cache-Control = "public, max-age=0, must-revalidate"
 
 [[headers]]
   for = "/app.js"
   [headers.values]
-    Cache-Control = "public, max-age=3600"
+    Cache-Control = "public, max-age=0, must-revalidate"

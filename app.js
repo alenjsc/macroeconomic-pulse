@@ -168,47 +168,54 @@ function updateSidebarTimestamps(meta) {
     const elIst = document.getElementById('sidebarTimeIST');
     const elEt = document.getElementById('sidebarTimeET');
 
-    // 1. If pre-computed in fetch_data.py
+    // Helper to format Date into guaranteed: "24 Sep 2026, 02:30 AM"
+    const formatExactDate = (dt, tz) => {
+        try {
+            const formatter = new Intl.DateTimeFormat('en-US', {
+                timeZone: tz,
+                day: '2-digit',
+                month: 'short',
+                year: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                hour12: true
+            });
+            const parts = {};
+            formatter.formatToParts(dt).forEach(p => { parts[p.type] = p.value; });
+            const ampm = (parts.dayPeriod || '').toUpperCase();
+            return `${parts.day} ${parts.month} ${parts.year}, ${parts.hour}:${parts.minute} ${ampm}`.trim();
+        } catch (e) {
+            return null;
+        }
+    };
+
+    // Parse UTC timestamp to build identical syntax for both timezones
+    const utcStr = meta.generated_at_utc || meta.display_time;
+    if (utcStr) {
+        let isoStr = utcStr;
+        if (utcStr.includes(' UTC')) {
+            isoStr = utcStr.replace(' UTC', 'Z').replace(' ', 'T');
+        }
+        const dt = new Date(isoStr);
+        if (!isNaN(dt.getTime())) {
+            const ist = formatExactDate(dt, 'Asia/Kolkata');
+            const et = formatExactDate(dt, 'America/New_York');
+            if (ist && et) {
+                if (elIst) elIst.textContent = ist;
+                if (elEt) elEt.textContent = et;
+                return;
+            }
+        }
+    }
+
+    // Fallback to pre-computed strings if parsing unavailable
     if (meta.display_time_ist && meta.display_time_et) {
         if (elIst) elIst.textContent = meta.display_time_ist;
         if (elEt) elEt.textContent = meta.display_time_et;
         return;
     }
 
-    // 2. Dynamic browser formatting of UTC timestamp
-    const utcStr = meta.generated_at_utc || meta.display_time;
-    if (!utcStr) return;
-
-    try {
-        let isoStr = utcStr;
-        if (utcStr.includes(' UTC')) {
-            isoStr = utcStr.replace(' UTC', 'Z').replace(' ', 'T');
-        }
-        const dt = new Date(isoStr);
-
-        if (!isNaN(dt.getTime())) {
-            const formatOptions = {
-                day: '2-digit', month: 'short', year: 'numeric',
-                hour: '2-digit', minute: '2-digit', hour12: true
-            };
-
-            const formatTz = (tz) => {
-                const str = new Intl.DateTimeFormat('en-GB', { timeZone: tz, ...formatOptions }).format(dt);
-                return str.replace(/\b(am|pm)\b/i, m => m.toUpperCase());
-            };
-
-            const istFormatted = formatTz('Asia/Kolkata');
-            const etFormatted = formatTz('America/New_York');
-
-            if (elIst) elIst.textContent = istFormatted;
-            if (elEt) elEt.textContent = etFormatted;
-            return;
-        }
-    } catch (e) {
-        console.warn('Error formatting timestamps:', e);
-    }
-
-    if (elIst) elIst.textContent = meta.display_time || meta.generated_at_utc || '—';
+    if (elIst) elIst.textContent = meta.display_time || '—';
     if (elEt) elEt.textContent = '—';
 }
 
