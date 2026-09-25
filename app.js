@@ -1557,6 +1557,11 @@ function setupEventListeners() {
             currentTab = targetTab;
             // Render charts for the newly activated tab
             renderChartsForTab(currentTab);
+
+            // On mobile / tablet viewports, close sidebar drawer when user selects a tab
+            if (window.innerWidth <= 1024) {
+                closeSidebar();
+            }
         });
     });
 
@@ -1576,14 +1581,66 @@ function setupEventListeners() {
         });
     });
 
-    // 3. Mobile Sidebar Toggle
-    const toggleBtn = document.getElementById('sidebarToggle');
-    const sidebar = document.getElementById('sidebar');
-    if (toggleBtn && sidebar) {
-        toggleBtn.addEventListener('click', () => {
-            sidebar.classList.toggle('open');
-        });
+    // 3. Sidebar Toggle & Drawer Controls (Desktop & Mobile)
+    function toggleSidebar() {
+        const isMobile = window.innerWidth <= 1024;
+        const sidebar = document.getElementById('sidebar');
+        const backdrop = document.getElementById('sidebarBackdrop');
+
+        if (isMobile) {
+            const isOpen = sidebar ? sidebar.classList.toggle('open') : false;
+            if (backdrop) backdrop.classList.toggle('active', isOpen);
+        } else {
+            // Desktop: toggle body collapse class and re-fit charts to 100% width
+            document.body.classList.toggle('sidebar-collapsed');
+            triggerChartsResize();
+        }
     }
+
+    function closeSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        const backdrop = document.getElementById('sidebarBackdrop');
+        if (sidebar) sidebar.classList.remove('open');
+        if (backdrop) backdrop.classList.remove('active');
+
+        if (window.innerWidth > 1024) {
+            document.body.classList.add('sidebar-collapsed');
+            triggerChartsResize();
+        }
+    }
+
+    function triggerChartsResize() {
+        // Dispatch window resize events during and after transition (0.3s)
+        // so ApexCharts redraws full-width SVG paths without leaving blank space
+        setTimeout(() => window.dispatchEvent(new Event('resize')), 100);
+        setTimeout(() => window.dispatchEvent(new Event('resize')), 250);
+        setTimeout(() => window.dispatchEvent(new Event('resize')), 350);
+    }
+
+    const toggleBtn = document.getElementById('sidebarToggle');
+    if (toggleBtn) {
+        toggleBtn.addEventListener('click', toggleSidebar);
+    }
+
+    const closeBtn = document.getElementById('sidebarCloseBtn');
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeSidebar);
+    }
+
+    const backdrop = document.getElementById('sidebarBackdrop');
+    if (backdrop) {
+        backdrop.addEventListener('click', closeSidebar);
+    }
+
+    // Escape key closes mobile drawer
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            const sidebar = document.getElementById('sidebar');
+            if (sidebar && sidebar.classList.contains('open')) {
+                closeSidebar();
+            }
+        }
+    });
 }
 
 function updateHeaderTitles(tab) {
