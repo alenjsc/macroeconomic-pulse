@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generated_at_utc": "2026-09-26 04:51:39 UTC",
-    "display_time_ist": "26 Sep 2026, 10:21 AM",
-    "display_time_et": "26 Sep 2026, 12:51 AM",
-    "display_time": "26 Sep 2026, 10:21 AM",
+    "generated_at_utc": "2026-09-26 13:01:51 UTC",
+    "display_time_ist": "26 Sep 2026, 06:31 PM",
+    "display_time_et": "26 Sep 2026, 09:01 AM",
+    "display_time": "26 Sep 2026, 06:31 PM",
     "status": "success"
   },
   "treasury": {
@@ -30502,12 +30502,12 @@
     },
     "EUR_USD": {
       "symbol": "EURUSD=X",
-      "current_price": 1.139,
+      "current_price": 1.14,
       "prev_day_price": 1.137,
-      "abs_change": 0.002,
-      "pct_change": 0.19,
-      "month_abs_change": -0.027,
-      "month_pct_change": -2.3,
+      "abs_change": 0.003,
+      "pct_change": 0.26,
+      "month_abs_change": -0.026,
+      "month_pct_change": -2.23,
       "timeseries": [
         {
           "date": "2021-09-26",
@@ -35710,8 +35710,8 @@
           "price": 1.137
         },
         {
-          "date": "2026-09-25",
-          "price": 1.139
+          "date": "2026-09-26",
+          "price": 1.14
         }
       ],
       "name": "EUR / USD",
@@ -40928,7 +40928,7 @@
           "price": 1.321
         },
         {
-          "date": "2026-09-25",
+          "date": "2026-09-26",
           "price": 1.325
         }
       ],
