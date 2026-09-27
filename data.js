@@ -1,10 +1,10 @@
 /* AUTO-GENERATED MACROECONOMIC DATA FILE - DO NOT EDIT DIRECTLY */
 const MACRO_DATA = {
   "meta": {
-    "generated_at_utc": "2026-09-27 05:13:27 UTC",
-    "display_time_ist": "27 Sep 2026, 10:43 AM",
-    "display_time_et": "27 Sep 2026, 01:13 AM",
-    "display_time": "27 Sep 2026, 10:43 AM",
+    "generated_at_utc": "2026-09-27 13:54:51 UTC",
+    "display_time_ist": "27 Sep 2026, 07:24 PM",
+    "display_time_et": "27 Sep 2026, 09:54 AM",
+    "display_time": "27 Sep 2026, 07:24 PM",
     "status": "success"
   },
   "treasury": {
@@ -25285,12 +25285,12 @@ const MACRO_DATA = {
     },
     "USD_INR": {
       "symbol": "USDINR=X",
-      "current_price": 95.82,
+      "current_price": 95.802,
       "prev_day_price": 96.161,
-      "abs_change": -0.341,
-      "pct_change": -0.35,
-      "month_abs_change": 0.35,
-      "month_pct_change": 0.37,
+      "abs_change": -0.359,
+      "pct_change": -0.37,
+      "month_abs_change": 0.332,
+      "month_pct_change": 0.35,
       "timeseries": [
         {
           "date": "2021-09-26",
@@ -30494,7 +30494,7 @@ const MACRO_DATA = {
         },
         {
           "date": "2026-09-27",
-          "price": 95.82
+          "price": 95.802
         }
       ],
       "name": "USD / INR",
