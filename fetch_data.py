@@ -17,6 +17,8 @@ import json
 import time
 import datetime
 import urllib.request
+import urllib.parse
+import re
 import xml.etree.ElementTree as ET
 
 WORKSPACE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -532,6 +534,24 @@ def fetch_all_market_assets():
 # ==============================================================================
 # 5. INDIA G-SEC BENCHMARK YIELDS & RBI REPO RATE
 # ==============================================================================
+def fetch_live_rbi_repo_rate():
+    """
+    Attempts to fetch the live official Policy Repo Rate directly from the Reserve Bank of India homepage (rbi.org.in).
+    """
+    try:
+        url = 'https://www.rbi.org.in'
+        raw = make_request(url, timeout=10)
+        if raw:
+            html = raw.decode('utf-8', errors='ignore')
+            m = re.search(r'Repo\s+Rate\s*</th>\s*<td[^>]*>\s*:\s*([\d\.]+)%', html, re.I)
+            if m:
+                rate = float(m.group(1))
+                print(f"   [OK] Live RBI Policy Repo Rate confirmed from rbi.org.in: {rate}%")
+                return rate
+    except Exception as e:
+        print(f"   [WARN] Could not fetch live RBI rate from rbi.org.in: {e}")
+    return None
+
 def fetch_india_rates(calendar_dates=None):
     print("-> Compiling India G-Sec Benchmark Yields (2Y, 10Y, 30Y) & RBI Repo Rate...")
     
@@ -549,8 +569,17 @@ def fetch_india_rates(calendar_dates=None):
         ('2025-06-06', 6.00),
         ('2025-10-09', 5.75),
         ('2026-02-06', 5.50),
-        ('2026-06-05', 5.25)
+        ('2026-06-05', 5.25),
+        ('2026-10-07', 5.50)
     ]
+
+    # Live check from RBI official site to guarantee the latest policy rate is always captured
+    live_rate = fetch_live_rbi_repo_rate()
+    if live_rate is not None:
+        if repo_schedule and live_rate != repo_schedule[-1][1]:
+            today_str = datetime.datetime.now().strftime('%Y-%m-%d')
+            print(f"   [INFO] Appending live rate update: {live_rate}% on {today_str}")
+            repo_schedule.append((today_str, live_rate))
 
     def get_repo_rate_for_date(d_str):
         rate = 4.00
@@ -577,7 +606,8 @@ def fetch_india_rates(calendar_dates=None):
         ('2025-06-30', 6.60, 6.82, 7.30),
         ('2025-12-31', 6.50, 6.95, 7.45),
         ('2026-06-30', 6.42, 7.01, 7.52),
-        ('2026-09-23', 6.39, 7.03, 7.57)
+        ('2026-09-23', 6.39, 7.03, 7.57),
+        ('2026-10-09', 6.48, 7.08, 7.61)
     ]
 
     import bisect
@@ -620,14 +650,16 @@ def fetch_india_rates(calendar_dates=None):
             'repo_rate': repo
         })
 
-    latest = history[-1] if history else {'yield_2y': 6.39, 'yield_10y': 7.03, 'yield_30y': 7.57, 'repo_rate': 5.25}
+    today_str = datetime.datetime.now().strftime('%Y-%m-%d')
+    current_repo = get_repo_rate_for_date(today_str)
+    latest = history[-1] if history else {'yield_2y': 6.48, 'yield_10y': 7.08, 'yield_30y': 7.61, 'repo_rate': current_repo}
 
     return {
-        'current_2y': latest.get('yield_2y', 6.39),
-        'current_10y': latest.get('yield_10y', 7.03),
-        'current_30y': latest.get('yield_30y', 7.57),
-        'current_spread_10_2': round(latest.get('yield_10y', 7.03) - latest.get('yield_2y', 6.39), 2),
-        'current_repo_rate': latest.get('repo_rate', 5.25),
+        'current_2y': latest.get('yield_2y', 6.48),
+        'current_10y': latest.get('yield_10y', 7.08),
+        'current_30y': latest.get('yield_30y', 7.61),
+        'current_spread_10_2': round(latest.get('yield_10y', 7.08) - latest.get('yield_2y', 6.48), 2),
+        'current_repo_rate': current_repo,
         'history': history
     }
 

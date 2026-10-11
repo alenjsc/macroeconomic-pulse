@@ -1,10 +1,10 @@
 /* AUTO-GENERATED MACROECONOMIC DATA FILE - DO NOT EDIT DIRECTLY */
 const MACRO_DATA = {
   "meta": {
-    "generated_at_utc": "2026-10-11 05:40:02 UTC",
-    "display_time_ist": "11 Oct 2026, 11:10 AM",
-    "display_time_et": "11 Oct 2026, 01:40 AM",
-    "display_time": "11 Oct 2026, 11:10 AM",
+    "generated_at_utc": "2026-10-11 13:30:50 UTC",
+    "display_time_ist": "11 Oct 2026, 07:00 PM",
+    "display_time_et": "11 Oct 2026, 09:30 AM",
+    "display_time": "11 Oct 2026, 07:00 PM",
     "status": "success"
   },
   "treasury": {
@@ -9730,11 +9730,11 @@ const MACRO_DATA = {
     ]
   },
   "india_rates": {
-    "current_2y": 6.39,
-    "current_10y": 7.03,
-    "current_30y": 7.57,
-    "current_spread_10_2": 0.64,
-    "current_repo_rate": 5.25,
+    "current_2y": 6.48,
+    "current_10y": 7.08,
+    "current_30y": 7.61,
+    "current_spread_10_2": 0.6,
+    "current_repo_rate": 5.5,
     "history": [
       {
         "date": "2022-01-03",
@@ -19186,99 +19186,99 @@ const MACRO_DATA = {
       },
       {
         "date": "2026-09-24",
-        "yield_2y": 6.39,
+        "yield_2y": 6.4,
         "yield_10y": 7.03,
         "yield_30y": 7.57,
-        "spread_10_2": 0.64,
+        "spread_10_2": 0.63,
         "repo_rate": 5.25
       },
       {
         "date": "2026-09-25",
-        "yield_2y": 6.39,
-        "yield_10y": 7.03,
-        "yield_30y": 7.57,
+        "yield_2y": 6.4,
+        "yield_10y": 7.04,
+        "yield_30y": 7.58,
         "spread_10_2": 0.64,
         "repo_rate": 5.25
       },
       {
         "date": "2026-09-28",
-        "yield_2y": 6.39,
-        "yield_10y": 7.03,
-        "yield_30y": 7.57,
-        "spread_10_2": 0.64,
+        "yield_2y": 6.42,
+        "yield_10y": 7.05,
+        "yield_30y": 7.58,
+        "spread_10_2": 0.63,
         "repo_rate": 5.25
       },
       {
         "date": "2026-09-29",
-        "yield_2y": 6.39,
-        "yield_10y": 7.03,
-        "yield_30y": 7.57,
-        "spread_10_2": 0.64,
+        "yield_2y": 6.42,
+        "yield_10y": 7.05,
+        "yield_30y": 7.58,
+        "spread_10_2": 0.63,
         "repo_rate": 5.25
       },
       {
         "date": "2026-09-30",
-        "yield_2y": 6.39,
-        "yield_10y": 7.03,
-        "yield_30y": 7.57,
-        "spread_10_2": 0.64,
+        "yield_2y": 6.43,
+        "yield_10y": 7.05,
+        "yield_30y": 7.59,
+        "spread_10_2": 0.62,
         "repo_rate": 5.25
       },
       {
         "date": "2026-10-01",
-        "yield_2y": 6.39,
-        "yield_10y": 7.03,
-        "yield_30y": 7.57,
-        "spread_10_2": 0.64,
+        "yield_2y": 6.44,
+        "yield_10y": 7.05,
+        "yield_30y": 7.59,
+        "spread_10_2": 0.61,
         "repo_rate": 5.25
       },
       {
         "date": "2026-10-02",
-        "yield_2y": 6.39,
-        "yield_10y": 7.03,
-        "yield_30y": 7.57,
-        "spread_10_2": 0.64,
+        "yield_2y": 6.44,
+        "yield_10y": 7.06,
+        "yield_30y": 7.59,
+        "spread_10_2": 0.62,
         "repo_rate": 5.25
       },
       {
         "date": "2026-10-05",
-        "yield_2y": 6.39,
-        "yield_10y": 7.03,
-        "yield_30y": 7.57,
-        "spread_10_2": 0.64,
+        "yield_2y": 6.46,
+        "yield_10y": 7.07,
+        "yield_30y": 7.6,
+        "spread_10_2": 0.61,
         "repo_rate": 5.25
       },
       {
         "date": "2026-10-06",
-        "yield_2y": 6.39,
-        "yield_10y": 7.03,
-        "yield_30y": 7.57,
-        "spread_10_2": 0.64,
+        "yield_2y": 6.46,
+        "yield_10y": 7.07,
+        "yield_30y": 7.6,
+        "spread_10_2": 0.61,
         "repo_rate": 5.25
       },
       {
         "date": "2026-10-07",
-        "yield_2y": 6.39,
-        "yield_10y": 7.03,
-        "yield_30y": 7.57,
-        "spread_10_2": 0.64,
-        "repo_rate": 5.25
+        "yield_2y": 6.47,
+        "yield_10y": 7.07,
+        "yield_30y": 7.61,
+        "spread_10_2": 0.6,
+        "repo_rate": 5.5
       },
       {
         "date": "2026-10-08",
-        "yield_2y": 6.39,
-        "yield_10y": 7.03,
-        "yield_30y": 7.57,
-        "spread_10_2": 0.64,
-        "repo_rate": 5.25
+        "yield_2y": 6.47,
+        "yield_10y": 7.08,
+        "yield_30y": 7.61,
+        "spread_10_2": 0.61,
+        "repo_rate": 5.5
       },
       {
         "date": "2026-10-09",
-        "yield_2y": 6.39,
-        "yield_10y": 7.03,
-        "yield_30y": 7.57,
-        "spread_10_2": 0.64,
-        "repo_rate": 5.25
+        "yield_2y": 6.48,
+        "yield_10y": 7.08,
+        "yield_30y": 7.61,
+        "spread_10_2": 0.6,
+        "repo_rate": 5.5
       }
     ]
   },
