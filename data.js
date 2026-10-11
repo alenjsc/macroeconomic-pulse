@@ -1,10 +1,10 @@
 /* AUTO-GENERATED MACROECONOMIC DATA FILE - DO NOT EDIT DIRECTLY */
 const MACRO_DATA = {
   "meta": {
-    "generated_at_utc": "2026-10-11 13:30:50 UTC",
-    "display_time_ist": "11 Oct 2026, 07:00 PM",
-    "display_time_et": "11 Oct 2026, 09:30 AM",
-    "display_time": "11 Oct 2026, 07:00 PM",
+    "generated_at_utc": "2026-10-11 13:36:35 UTC",
+    "display_time_ist": "11 Oct 2026, 07:06 PM",
+    "display_time_et": "11 Oct 2026, 09:36 AM",
+    "display_time": "11 Oct 2026, 07:06 PM",
     "status": "success"
   },
   "treasury": {
