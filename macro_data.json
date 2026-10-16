@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generated_at_utc": "2026-10-16 04:24:50 UTC",
-    "display_time_ist": "16 Oct 2026, 09:54 AM",
-    "display_time_et": "16 Oct 2026, 12:24 AM",
-    "display_time": "16 Oct 2026, 09:54 AM",
+    "generated_at_utc": "2026-10-16 13:12:51 UTC",
+    "display_time_ist": "16 Oct 2026, 06:42 PM",
+    "display_time_et": "16 Oct 2026, 09:12 AM",
+    "display_time": "16 Oct 2026, 06:42 PM",
     "status": "success"
   },
   "treasury": {
@@ -20282,12 +20282,12 @@
   "markets": {
     "USD_JPY": {
       "symbol": "JPY=X",
-      "current_price": 157.824,
+      "current_price": 158.034,
       "prev_day_price": 157.957,
-      "abs_change": -0.133,
-      "pct_change": -0.08,
-      "month_abs_change": 1.81,
-      "month_pct_change": 1.16,
+      "abs_change": 0.077,
+      "pct_change": 0.05,
+      "month_abs_change": 2.02,
+      "month_pct_change": 1.29,
       "timeseries": [
         {
           "date": "2021-10-17",
@@ -25487,7 +25487,7 @@
         },
         {
           "date": "2026-10-16",
-          "price": 157.824
+          "price": 158.034
         }
       ],
       "name": "USD / JPY",
@@ -25496,12 +25496,12 @@
     },
     "USD_INR": {
       "symbol": "USDINR=X",
-      "current_price": 94.802,
+      "current_price": 94.96,
       "prev_day_price": 95.151,
-      "abs_change": -0.349,
-      "pct_change": -0.37,
-      "month_abs_change": -1.33,
-      "month_pct_change": -1.38,
+      "abs_change": -0.191,
+      "pct_change": -0.2,
+      "month_abs_change": -1.172,
+      "month_pct_change": -1.22,
       "timeseries": [
         {
           "date": "2021-10-17",
@@ -30701,7 +30701,7 @@
         },
         {
           "date": "2026-10-16",
-          "price": 94.802
+          "price": 94.96
         }
       ],
       "name": "USD / INR",
@@ -30710,12 +30710,12 @@
     },
     "EUR_USD": {
       "symbol": "EURUSD=X",
-      "current_price": 1.124,
+      "current_price": 1.125,
       "prev_day_price": 1.12,
-      "abs_change": 0.004,
-      "pct_change": 0.33,
-      "month_abs_change": -0.023,
-      "month_pct_change": -2.03,
+      "abs_change": 0.005,
+      "pct_change": 0.42,
+      "month_abs_change": -0.022,
+      "month_pct_change": -1.94,
       "timeseries": [
         {
           "date": "2021-10-17",
@@ -35915,7 +35915,7 @@
         },
         {
           "date": "2026-10-16",
-          "price": 1.124
+          "price": 1.125
         }
       ],
       "name": "EUR / USD",
@@ -35924,12 +35924,12 @@
     },
     "GBP_USD": {
       "symbol": "GBPUSD=X",
-      "current_price": 1.331,
+      "current_price": 1.333,
       "prev_day_price": 1.323,
-      "abs_change": 0.008,
-      "pct_change": 0.57,
-      "month_abs_change": -0.007,
-      "month_pct_change": -0.55,
+      "abs_change": 0.01,
+      "pct_change": 0.78,
+      "month_abs_change": -0.005,
+      "month_pct_change": -0.35,
       "timeseries": [
         {
           "date": "2021-10-17",
@@ -41129,7 +41129,7 @@
         },
         {
           "date": "2026-10-16",
-          "price": 1.331
+          "price": 1.333
         }
       ],
       "name": "GBP / USD",
@@ -51198,12 +51198,12 @@
     },
     "NIFTY50": {
       "symbol": "^NSEI",
-      "current_price": 22982.65,
+      "current_price": 23146.15,
       "prev_day_price": 22997.35,
-      "abs_change": -14.7,
-      "pct_change": -0.06,
-      "month_abs_change": -234.95,
-      "month_pct_change": -1.01,
+      "abs_change": 148.8,
+      "pct_change": 0.65,
+      "month_abs_change": -71.45,
+      "month_pct_change": -0.31,
       "timeseries": [
         {
           "date": "2021-10-18",
@@ -56147,7 +56147,7 @@
         },
         {
           "date": "2026-10-16",
-          "price": 22982.65
+          "price": 23146.15
         }
       ],
       "name": "Nifty 50",
@@ -56156,17 +56156,13 @@
     },
     "VIX": {
       "symbol": "^VIX",
-      "current_price": 16.46,
-      "prev_day_price": 16.87,
-      "abs_change": -0.41,
-      "pct_change": -2.43,
-      "month_abs_change": -1.25,
-      "month_pct_change": -7.06,
+      "current_price": 15.98,
+      "prev_day_price": 16.46,
+      "abs_change": -0.48,
+      "pct_change": -2.92,
+      "month_abs_change": 0.54,
+      "month_pct_change": 3.5,
       "timeseries": [
-        {
-          "date": "2021-10-15",
-          "price": 16.3
-        },
         {
           "date": "2021-10-18",
           "price": 16.31
@@ -61190,6 +61186,10 @@
         {
           "date": "2026-10-15",
           "price": 16.46
+        },
+        {
+          "date": "2026-10-16",
+          "price": 15.98
         }
       ],
       "name": "CBOE Volatility Index (VIX)",
@@ -61198,12 +61198,12 @@
     },
     "GOLD": {
       "symbol": "GC=F",
-      "current_price": 4198.0,
+      "current_price": 4189.0,
       "prev_day_price": 4170.1,
-      "abs_change": 27.9,
-      "pct_change": 0.67,
-      "month_abs_change": -201.7,
-      "month_pct_change": -4.58,
+      "abs_change": 18.9,
+      "pct_change": 0.45,
+      "month_abs_change": -210.7,
+      "month_pct_change": -4.79,
       "timeseries": [
         {
           "date": "2021-10-18",
@@ -66235,7 +66235,7 @@
         },
         {
           "date": "2026-10-16",
-          "price": 4198.0
+          "price": 4189.0
         }
       ],
       "name": "Gold (Comex)",
@@ -66244,12 +66244,12 @@
     },
     "BRENT_OIL": {
       "symbol": "BZ=F",
-      "current_price": 105.36,
+      "current_price": 105.93,
       "prev_day_price": 105.92,
-      "abs_change": -0.56,
-      "pct_change": -0.53,
-      "month_abs_change": 0.54,
-      "month_pct_change": 0.52,
+      "abs_change": 0.01,
+      "pct_change": 0.01,
+      "month_abs_change": 1.11,
+      "month_pct_change": 1.06,
       "timeseries": [
         {
           "date": "2021-10-18",
@@ -71281,7 +71281,7 @@
         },
         {
           "date": "2026-10-16",
-          "price": 105.36
+          "price": 105.93
         }
       ],
       "name": "Brent Crude Oil",
@@ -71290,12 +71290,12 @@
     },
     "WTI_OIL": {
       "symbol": "CL=F",
-      "current_price": 95.82,
+      "current_price": 95.77,
       "prev_day_price": 97.97,
-      "abs_change": -2.15,
-      "pct_change": -2.19,
-      "month_abs_change": -6.09,
-      "month_pct_change": -5.98,
+      "abs_change": -2.2,
+      "pct_change": -2.25,
+      "month_abs_change": -6.14,
+      "month_pct_change": -6.02,
       "timeseries": [
         {
           "date": "2021-10-18",
@@ -76323,7 +76323,7 @@
         },
         {
           "date": "2026-10-16",
-          "price": 95.82
+          "price": 95.77
         }
       ],
       "name": "WTI Crude Oil",
