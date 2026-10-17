@@ -1,10 +1,10 @@
 /* AUTO-GENERATED MACROECONOMIC DATA FILE - DO NOT EDIT DIRECTLY */
 const MACRO_DATA = {
   "meta": {
-    "generated_at_utc": "2026-10-17 04:18:48 UTC",
-    "display_time_ist": "17 Oct 2026, 09:48 AM",
-    "display_time_et": "17 Oct 2026, 12:18 AM",
-    "display_time": "17 Oct 2026, 09:48 AM",
+    "generated_at_utc": "2026-10-17 12:09:11 UTC",
+    "display_time_ist": "17 Oct 2026, 05:39 PM",
+    "display_time_et": "17 Oct 2026, 08:09 AM",
+    "display_time": "17 Oct 2026, 05:39 PM",
     "status": "success"
   },
   "treasury": {
@@ -30738,9 +30738,9 @@ const MACRO_DATA = {
       "current_price": 1.124,
       "prev_day_price": 1.121,
       "abs_change": 0.003,
-      "pct_change": 0.3,
+      "pct_change": 0.29,
       "month_abs_change": -0.024,
-      "month_pct_change": -2.06,
+      "month_pct_change": -2.07,
       "timeseries": [
         {
           "date": "2021-10-17",
@@ -35943,7 +35943,7 @@ const MACRO_DATA = {
           "price": 1.121
         },
         {
-          "date": "2026-10-16",
+          "date": "2026-10-17",
           "price": 1.124
         }
       ],
@@ -41161,7 +41161,7 @@ const MACRO_DATA = {
           "price": 1.327
         },
         {
-          "date": "2026-10-16",
+          "date": "2026-10-17",
           "price": 1.333
         }
       ],
@@ -61239,12 +61239,12 @@ const MACRO_DATA = {
     },
     "GOLD": {
       "symbol": "GC=F",
-      "current_price": 4186.7,
+      "current_price": 4181.1,
       "prev_day_price": 4170.1,
-      "abs_change": 16.6,
-      "pct_change": 0.4,
-      "month_abs_change": -213.0,
-      "month_pct_change": -4.84,
+      "abs_change": 11.0,
+      "pct_change": 0.26,
+      "month_abs_change": -218.6,
+      "month_pct_change": -4.97,
       "timeseries": [
         {
           "date": "2021-10-18",
@@ -66285,12 +66285,12 @@ const MACRO_DATA = {
     },
     "BRENT_OIL": {
       "symbol": "BZ=F",
-      "current_price": 109.69,
+      "current_price": 109.86,
       "prev_day_price": 105.92,
-      "abs_change": 3.77,
-      "pct_change": 3.56,
-      "month_abs_change": 4.87,
-      "month_pct_change": 4.65,
+      "abs_change": 3.94,
+      "pct_change": 3.72,
+      "month_abs_change": 5.04,
+      "month_pct_change": 4.81,
       "timeseries": [
         {
           "date": "2021-10-18",
@@ -71331,12 +71331,12 @@ const MACRO_DATA = {
     },
     "WTI_OIL": {
       "symbol": "CL=F",
-      "current_price": 99.04,
+      "current_price": 99.02,
       "prev_day_price": 97.97,
-      "abs_change": 1.07,
-      "pct_change": 1.09,
-      "month_abs_change": -2.87,
-      "month_pct_change": -2.82,
+      "abs_change": 1.05,
+      "pct_change": 1.07,
+      "month_abs_change": -2.89,
+      "month_pct_change": -2.84,
       "timeseries": [
         {
           "date": "2021-10-18",
