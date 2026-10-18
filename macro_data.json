@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generated_at_utc": "2026-10-17 18:26:28 UTC",
-    "display_time_ist": "17 Oct 2026, 11:56 PM",
-    "display_time_et": "17 Oct 2026, 02:26 PM",
-    "display_time": "17 Oct 2026, 11:56 PM",
+    "generated_at_utc": "2026-10-18 04:24:30 UTC",
+    "display_time_ist": "18 Oct 2026, 09:54 AM",
+    "display_time_et": "18 Oct 2026, 12:24 AM",
+    "display_time": "18 Oct 2026, 09:54 AM",
     "status": "success"
   },
   "treasury": {
@@ -30724,7 +30724,7 @@
           "price": 94.525
         },
         {
-          "date": "2026-10-17",
+          "date": "2026-10-18",
           "price": 94.96
         }
       ],
@@ -35955,9 +35955,9 @@
       "current_price": 1.333,
       "prev_day_price": 1.327,
       "abs_change": 0.006,
-      "pct_change": 0.45,
+      "pct_change": 0.44,
       "month_abs_change": -0.003,
-      "month_pct_change": -0.22,
+      "month_pct_change": -0.23,
       "timeseries": [
         {
           "date": "2021-10-17",
@@ -41160,7 +41160,7 @@
           "price": 1.327
         },
         {
-          "date": "2026-10-17",
+          "date": "2026-10-18",
           "price": 1.333
         }
       ],
@@ -76363,7 +76363,7 @@
         },
         {
           "date": "2026-10-16",
-          "price": 101.41
+          "price": 99.02
         }
       ],
       "name": "WTI Crude Oil",
