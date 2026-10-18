@@ -1,10 +1,10 @@
 /* AUTO-GENERATED MACROECONOMIC DATA FILE - DO NOT EDIT DIRECTLY */
 const MACRO_DATA = {
   "meta": {
-    "generated_at_utc": "2026-10-18 12:35:29 UTC",
-    "display_time_ist": "18 Oct 2026, 06:05 PM",
-    "display_time_et": "18 Oct 2026, 08:35 AM",
-    "display_time": "18 Oct 2026, 06:05 PM",
+    "generated_at_utc": "2026-10-18 18:36:20 UTC",
+    "display_time_ist": "19 Oct 2026, 12:06 AM",
+    "display_time_et": "18 Oct 2026, 02:36 PM",
+    "display_time": "19 Oct 2026, 12:06 AM",
     "status": "success"
   },
   "treasury": {
@@ -25517,12 +25517,12 @@ const MACRO_DATA = {
     },
     "USD_INR": {
       "symbol": "USDINR=X",
-      "current_price": 94.96,
+      "current_price": 94.95,
       "prev_day_price": 94.525,
-      "abs_change": 0.435,
-      "pct_change": 0.46,
-      "month_abs_change": -0.839,
-      "month_pct_change": -0.88,
+      "abs_change": 0.425,
+      "pct_change": 0.45,
+      "month_abs_change": -0.849,
+      "month_pct_change": -0.89,
       "timeseries": [
         {
           "date": "2021-10-17",
@@ -30726,7 +30726,7 @@ const MACRO_DATA = {
         },
         {
           "date": "2026-10-18",
-          "price": 94.96
+          "price": 94.95
         }
       ],
       "name": "USD / INR",
@@ -35953,12 +35953,12 @@ const MACRO_DATA = {
     },
     "GBP_USD": {
       "symbol": "GBPUSD=X",
-      "current_price": 1.333,
+      "current_price": 1.331,
       "prev_day_price": 1.327,
-      "abs_change": 0.006,
-      "pct_change": 0.44,
-      "month_abs_change": -0.003,
-      "month_pct_change": -0.23,
+      "abs_change": 0.004,
+      "pct_change": 0.28,
+      "month_abs_change": -0.005,
+      "month_pct_change": -0.4,
       "timeseries": [
         {
           "date": "2021-10-17",
@@ -41162,7 +41162,7 @@ const MACRO_DATA = {
         },
         {
           "date": "2026-10-18",
-          "price": 1.333
+          "price": 1.331
         }
       ],
       "name": "GBP / USD",
