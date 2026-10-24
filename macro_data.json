@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generated_at_utc": "2026-10-24 04:29:47 UTC",
-    "display_time_ist": "24 Oct 2026, 09:59 AM",
-    "display_time_et": "24 Oct 2026, 12:29 AM",
-    "display_time": "24 Oct 2026, 09:59 AM",
+    "generated_at_utc": "2026-10-24 12:38:49 UTC",
+    "display_time_ist": "24 Oct 2026, 06:08 PM",
+    "display_time_et": "24 Oct 2026, 08:38 AM",
+    "display_time": "24 Oct 2026, 06:08 PM",
     "status": "success"
   },
   "treasury": {
@@ -66360,12 +66360,12 @@
     },
     "BRENT_OIL": {
       "symbol": "BZ=F",
-      "current_price": 111.66,
+      "current_price": 111.7,
       "prev_day_price": 113.17,
-      "abs_change": -1.51,
-      "pct_change": -1.33,
-      "month_abs_change": 5.06,
-      "month_pct_change": 4.75,
+      "abs_change": -1.47,
+      "pct_change": -1.3,
+      "month_abs_change": 5.1,
+      "month_pct_change": 4.78,
       "timeseries": [
         {
           "date": "2021-10-25",
