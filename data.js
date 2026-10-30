@@ -1,10 +1,10 @@
 /* AUTO-GENERATED MACROECONOMIC DATA FILE - DO NOT EDIT DIRECTLY */
 const MACRO_DATA = {
   "meta": {
-    "generated_at_utc": "2026-10-30 05:39:52 UTC",
-    "display_time_ist": "30 Oct 2026, 11:09 AM",
-    "display_time_et": "30 Oct 2026, 01:39 AM",
-    "display_time": "30 Oct 2026, 11:09 AM",
+    "generated_at_utc": "2026-10-30 15:00:41 UTC",
+    "display_time_ist": "30 Oct 2026, 08:30 PM",
+    "display_time_et": "30 Oct 2026, 11:00 AM",
+    "display_time": "30 Oct 2026, 08:30 PM",
     "status": "success"
   },
   "treasury": {
@@ -20443,12 +20443,12 @@ const MACRO_DATA = {
   "markets": {
     "USD_JPY": {
       "symbol": "JPY=X",
-      "current_price": 157.678,
+      "current_price": 157.258,
       "prev_day_price": 157.833,
-      "abs_change": -0.155,
-      "pct_change": -0.1,
-      "month_abs_change": 0.12,
-      "month_pct_change": 0.08,
+      "abs_change": -0.575,
+      "pct_change": -0.36,
+      "month_abs_change": -0.3,
+      "month_pct_change": -0.19,
       "timeseries": [
         {
           "date": "2021-11-01",
@@ -25648,7 +25648,7 @@ const MACRO_DATA = {
         },
         {
           "date": "2026-10-30",
-          "price": 157.678
+          "price": 157.258
         }
       ],
       "name": "USD / JPY",
@@ -25657,12 +25657,12 @@ const MACRO_DATA = {
     },
     "USD_INR": {
       "symbol": "USDINR=X",
-      "current_price": 95.265,
+      "current_price": 94.94,
       "prev_day_price": 95.21,
-      "abs_change": 0.055,
-      "pct_change": 0.06,
-      "month_abs_change": -0.662,
-      "month_pct_change": -0.69,
+      "abs_change": -0.27,
+      "pct_change": -0.28,
+      "month_abs_change": -0.987,
+      "month_pct_change": -1.03,
       "timeseries": [
         {
           "date": "2021-11-01",
@@ -30862,7 +30862,7 @@ const MACRO_DATA = {
         },
         {
           "date": "2026-10-30",
-          "price": 95.265
+          "price": 94.94
         }
       ],
       "name": "USD / INR",
@@ -30871,12 +30871,12 @@ const MACRO_DATA = {
     },
     "EUR_USD": {
       "symbol": "EURUSD=X",
-      "current_price": 1.119,
+      "current_price": 1.116,
       "prev_day_price": 1.116,
-      "abs_change": 0.003,
-      "pct_change": 0.23,
-      "month_abs_change": -0.014,
-      "month_pct_change": -1.27,
+      "abs_change": -0.0,
+      "pct_change": -0.01,
+      "month_abs_change": -0.017,
+      "month_pct_change": -1.51,
       "timeseries": [
         {
           "date": "2021-11-01",
@@ -36076,7 +36076,7 @@ const MACRO_DATA = {
         },
         {
           "date": "2026-10-30",
-          "price": 1.119
+          "price": 1.116
         }
       ],
       "name": "EUR / USD",
@@ -36085,12 +36085,12 @@ const MACRO_DATA = {
     },
     "GBP_USD": {
       "symbol": "GBPUSD=X",
-      "current_price": 1.338,
+      "current_price": 1.34,
       "prev_day_price": 1.333,
-      "abs_change": 0.005,
-      "pct_change": 0.41,
-      "month_abs_change": 0.012,
-      "month_pct_change": 0.94,
+      "abs_change": 0.007,
+      "pct_change": 0.5,
+      "month_abs_change": 0.014,
+      "month_pct_change": 1.03,
       "timeseries": [
         {
           "date": "2021-11-01",
@@ -41290,7 +41290,7 @@ const MACRO_DATA = {
         },
         {
           "date": "2026-10-30",
-          "price": 1.338
+          "price": 1.34
         }
       ],
       "name": "GBP / USD",
@@ -41299,12 +41299,12 @@ const MACRO_DATA = {
     },
     "SP500": {
       "symbol": "^GSPC",
-      "current_price": 7720.39,
-      "prev_day_price": 7743.98,
-      "abs_change": -23.59,
-      "pct_change": -0.3,
-      "month_abs_change": 68.85,
-      "month_pct_change": 0.9,
+      "current_price": 7620.22,
+      "prev_day_price": 7720.39,
+      "abs_change": -100.17,
+      "pct_change": -1.3,
+      "month_abs_change": -46.23,
+      "month_pct_change": -0.6,
       "timeseries": [
         {
           "date": "2021-11-01",
@@ -46321,6 +46321,10 @@ const MACRO_DATA = {
         {
           "date": "2026-10-29",
           "price": 7720.39
+        },
+        {
+          "date": "2026-10-30",
+          "price": 7620.22
         }
       ],
       "name": "S&P 500",
@@ -46329,12 +46333,12 @@ const MACRO_DATA = {
     },
     "NASDAQ100": {
       "symbol": "^NDX",
-      "current_price": 29402.508,
-      "prev_day_price": 29813.16,
-      "abs_change": -410.652,
-      "pct_change": -1.38,
-      "month_abs_change": -1005.992,
-      "month_pct_change": -3.31,
+      "current_price": 28623.607,
+      "prev_day_price": 29402.51,
+      "abs_change": -778.903,
+      "pct_change": -2.65,
+      "month_abs_change": -1877.954,
+      "month_pct_change": -6.16,
       "timeseries": [
         {
           "date": "2021-11-01",
@@ -51351,6 +51355,10 @@ const MACRO_DATA = {
         {
           "date": "2026-10-29",
           "price": 29402.51
+        },
+        {
+          "date": "2026-10-30",
+          "price": 28623.607
         }
       ],
       "name": "Nasdaq 100",
@@ -51359,12 +51367,12 @@ const MACRO_DATA = {
     },
     "NIFTY50": {
       "symbol": "^NSEI",
-      "current_price": 23001.6,
+      "current_price": 23053.1,
       "prev_day_price": 22936.75,
-      "abs_change": 64.85,
-      "pct_change": 0.28,
-      "month_abs_change": 285.401,
-      "month_pct_change": 1.26,
+      "abs_change": 116.35,
+      "pct_change": 0.51,
+      "month_abs_change": 336.901,
+      "month_pct_change": 1.48,
       "timeseries": [
         {
           "date": "2021-11-01",
@@ -56304,7 +56312,7 @@ const MACRO_DATA = {
         },
         {
           "date": "2026-10-30",
-          "price": 23001.6
+          "price": 23053.1
         }
       ],
       "name": "Nifty 50",
@@ -56313,17 +56321,13 @@ const MACRO_DATA = {
     },
     "VIX": {
       "symbol": "^VIX",
-      "current_price": 17.2,
-      "prev_day_price": 16.91,
-      "abs_change": 0.29,
-      "pct_change": 1.71,
-      "month_abs_change": 0.86,
-      "month_pct_change": 5.26,
+      "current_price": 19.11,
+      "prev_day_price": 17.2,
+      "abs_change": 1.91,
+      "pct_change": 11.1,
+      "month_abs_change": 2.72,
+      "month_pct_change": 16.6,
       "timeseries": [
-        {
-          "date": "2021-10-29",
-          "price": 16.26
-        },
         {
           "date": "2021-11-01",
           "price": 16.41
@@ -61347,6 +61351,10 @@ const MACRO_DATA = {
         {
           "date": "2026-10-29",
           "price": 17.2
+        },
+        {
+          "date": "2026-10-30",
+          "price": 19.11
         }
       ],
       "name": "CBOE Volatility Index (VIX)",
@@ -61355,12 +61363,12 @@ const MACRO_DATA = {
     },
     "GOLD": {
       "symbol": "GC=F",
-      "current_price": 4016.1,
+      "current_price": 3921.8,
       "prev_day_price": 4031.4,
-      "abs_change": -15.3,
-      "pct_change": -0.38,
-      "month_abs_change": -186.2,
-      "month_pct_change": -4.43,
+      "abs_change": -109.6,
+      "pct_change": -2.72,
+      "month_abs_change": -280.5,
+      "month_pct_change": -6.67,
       "timeseries": [
         {
           "date": "2021-11-01",
@@ -66392,7 +66400,7 @@ const MACRO_DATA = {
         },
         {
           "date": "2026-10-30",
-          "price": 4016.1
+          "price": 3921.8
         }
       ],
       "name": "Gold (Comex)",
@@ -66401,12 +66409,12 @@ const MACRO_DATA = {
     },
     "BRENT_OIL": {
       "symbol": "BZ=F",
-      "current_price": 111.93,
+      "current_price": 113.54,
       "prev_day_price": 114.88,
-      "abs_change": -2.95,
-      "pct_change": -2.57,
-      "month_abs_change": 9.62,
-      "month_pct_change": 9.4,
+      "abs_change": -1.34,
+      "pct_change": -1.17,
+      "month_abs_change": 11.23,
+      "month_pct_change": 10.98,
       "timeseries": [
         {
           "date": "2021-11-01",
@@ -71438,7 +71446,7 @@ const MACRO_DATA = {
         },
         {
           "date": "2026-10-30",
-          "price": 111.93
+          "price": 113.54
         }
       ],
       "name": "Brent Crude Oil",
@@ -71447,12 +71455,12 @@ const MACRO_DATA = {
     },
     "WTI_OIL": {
       "symbol": "CL=F",
-      "current_price": 102.99,
+      "current_price": 104.3,
       "prev_day_price": 102.0,
-      "abs_change": 0.99,
-      "pct_change": 0.97,
-      "month_abs_change": 10.12,
-      "month_pct_change": 10.9,
+      "abs_change": 2.3,
+      "pct_change": 2.25,
+      "month_abs_change": 11.43,
+      "month_pct_change": 12.31,
       "timeseries": [
         {
           "date": "2021-11-01",
@@ -76480,7 +76488,7 @@ const MACRO_DATA = {
         },
         {
           "date": "2026-10-30",
-          "price": 102.99
+          "price": 104.3
         }
       ],
       "name": "WTI Crude Oil",
