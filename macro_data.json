@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generated_at_utc": "2026-10-31 14:29:48 UTC",
-    "display_time_ist": "31 Oct 2026, 07:59 PM",
-    "display_time_et": "31 Oct 2026, 10:29 AM",
-    "display_time": "31 Oct 2026, 07:59 PM",
+    "generated_at_utc": "2026-10-31 19:56:24 UTC",
+    "display_time_ist": "01 Nov 2026, 01:26 AM",
+    "display_time_et": "31 Oct 2026, 03:56 PM",
+    "display_time": "01 Nov 2026, 01:26 AM",
     "status": "success"
   },
   "treasury": {
@@ -36105,11 +36105,11 @@
     "GBP_USD": {
       "symbol": "GBPUSD=X",
       "current_price": 1.339,
-      "prev_day_price": 1.333,
-      "abs_change": 0.006,
-      "pct_change": 0.44,
-      "month_abs_change": 0.013,
-      "month_pct_change": 0.97,
+      "prev_day_price": 1.338,
+      "abs_change": 0.001,
+      "pct_change": 0.1,
+      "month_abs_change": 0.019,
+      "month_pct_change": 1.46,
       "timeseries": [
         {
           "date": "2021-11-01",
@@ -41310,6 +41310,10 @@
         {
           "date": "2026-10-30",
           "price": 1.338
+        },
+        {
+          "date": "2026-10-31",
+          "price": 1.339
         }
       ],
       "name": "GBP / USD",
