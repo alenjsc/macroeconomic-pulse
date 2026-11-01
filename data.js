@@ -1,10 +1,10 @@
 /* AUTO-GENERATED MACROECONOMIC DATA FILE - DO NOT EDIT DIRECTLY */
 const MACRO_DATA = {
   "meta": {
-    "generated_at_utc": "2026-10-31 19:56:24 UTC",
-    "display_time_ist": "01 Nov 2026, 01:26 AM",
-    "display_time_et": "31 Oct 2026, 03:56 PM",
-    "display_time": "01 Nov 2026, 01:26 AM",
+    "generated_at_utc": "2026-11-01 05:55:42 UTC",
+    "display_time_ist": "01 Nov 2026, 11:25 AM",
+    "display_time_et": "01 Nov 2026, 01:55 AM",
+    "display_time": "01 Nov 2026, 11:25 AM",
     "status": "success"
   },
   "treasury": {
@@ -30881,7 +30881,7 @@ const MACRO_DATA = {
           "price": 95.152
         },
         {
-          "date": "2026-10-31",
+          "date": "2026-11-01",
           "price": 94.95
         }
       ],
@@ -41313,7 +41313,7 @@ const MACRO_DATA = {
           "price": 1.338
         },
         {
-          "date": "2026-10-31",
+          "date": "2026-11-01",
           "price": 1.339
         }
       ],
@@ -71470,7 +71470,7 @@ const MACRO_DATA = {
         },
         {
           "date": "2026-10-30",
-          "price": 117.64
+          "price": 113.43
         }
       ],
       "name": "Brent Crude Oil",
