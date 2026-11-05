@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generated_at_utc": "2026-11-05 06:37:03 UTC",
-    "display_time_ist": "05 Nov 2026, 12:07 PM",
-    "display_time_et": "05 Nov 2026, 01:37 AM",
-    "display_time": "05 Nov 2026, 12:07 PM",
+    "generated_at_utc": "2026-11-05 16:25:48 UTC",
+    "display_time_ist": "05 Nov 2026, 09:55 PM",
+    "display_time_et": "05 Nov 2026, 11:25 AM",
+    "display_time": "05 Nov 2026, 09:55 PM",
     "status": "success"
   },
   "treasury": {
@@ -20506,12 +20506,12 @@
   "markets": {
     "USD_JPY": {
       "symbol": "JPY=X",
-      "current_price": 157.902,
+      "current_price": 157.937,
       "prev_day_price": 158.469,
-      "abs_change": -0.567,
-      "pct_change": -0.36,
-      "month_abs_change": -0.394,
-      "month_pct_change": -0.25,
+      "abs_change": -0.532,
+      "pct_change": -0.34,
+      "month_abs_change": -0.359,
+      "month_pct_change": -0.23,
       "timeseries": [
         {
           "date": "2021-11-05",
@@ -25711,7 +25711,7 @@
         },
         {
           "date": "2026-11-05",
-          "price": 157.902
+          "price": 157.937
         }
       ],
       "name": "USD / JPY",
@@ -25720,12 +25720,12 @@
     },
     "USD_INR": {
       "symbol": "USDINR=X",
-      "current_price": 94.377,
+      "current_price": 94.465,
       "prev_day_price": 94.748,
-      "abs_change": -0.371,
-      "pct_change": -0.39,
-      "month_abs_change": -1.993,
-      "month_pct_change": -2.07,
+      "abs_change": -0.283,
+      "pct_change": -0.3,
+      "month_abs_change": -1.905,
+      "month_pct_change": -1.98,
       "timeseries": [
         {
           "date": "2021-11-05",
@@ -30925,7 +30925,7 @@
         },
         {
           "date": "2026-11-05",
-          "price": 94.378
+          "price": 94.465
         }
       ],
       "name": "USD / INR",
@@ -30934,12 +30934,12 @@
     },
     "EUR_USD": {
       "symbol": "EURUSD=X",
-      "current_price": 1.127,
+      "current_price": 1.123,
       "prev_day_price": 1.121,
-      "abs_change": 0.006,
-      "pct_change": 0.52,
-      "month_abs_change": 0.002,
-      "month_pct_change": 0.16,
+      "abs_change": 0.002,
+      "pct_change": 0.14,
+      "month_abs_change": -0.002,
+      "month_pct_change": -0.21,
       "timeseries": [
         {
           "date": "2021-11-05",
@@ -36139,7 +36139,7 @@
         },
         {
           "date": "2026-11-05",
-          "price": 1.127
+          "price": 1.123
         }
       ],
       "name": "EUR / USD",
@@ -36148,12 +36148,12 @@
     },
     "GBP_USD": {
       "symbol": "GBPUSD=X",
-      "current_price": 1.349,
+      "current_price": 1.347,
       "prev_day_price": 1.343,
-      "abs_change": 0.006,
-      "pct_change": 0.48,
-      "month_abs_change": 0.022,
-      "month_pct_change": 1.7,
+      "abs_change": 0.004,
+      "pct_change": 0.31,
+      "month_abs_change": 0.02,
+      "month_pct_change": 1.51,
       "timeseries": [
         {
           "date": "2021-11-05",
@@ -41353,7 +41353,7 @@
         },
         {
           "date": "2026-11-05",
-          "price": 1.35
+          "price": 1.347
         }
       ],
       "name": "GBP / USD",
@@ -41362,12 +41362,12 @@
     },
     "SP500": {
       "symbol": "^GSPC",
-      "current_price": 7688.62,
-      "prev_day_price": 7568.92,
-      "abs_change": 119.7,
-      "pct_change": 1.58,
-      "month_abs_change": -130.31,
-      "month_pct_change": -1.67,
+      "current_price": 7480.86,
+      "prev_day_price": 7688.62,
+      "abs_change": -207.76,
+      "pct_change": -2.7,
+      "month_abs_change": -320.91,
+      "month_pct_change": -4.11,
       "timeseries": [
         {
           "date": "2021-11-05",
@@ -46384,6 +46384,10 @@
         {
           "date": "2026-11-04",
           "price": 7688.62
+        },
+        {
+          "date": "2026-11-05",
+          "price": 7480.86
         }
       ],
       "name": "S&P 500",
@@ -46392,12 +46396,12 @@
     },
     "NASDAQ100": {
       "symbol": "^NDX",
-      "current_price": 28437.166,
-      "prev_day_price": 28180.26,
-      "abs_change": 256.906,
-      "pct_change": 0.91,
-      "month_abs_change": -2787.305,
-      "month_pct_change": -8.93,
+      "current_price": 27200.701,
+      "prev_day_price": 28437.17,
+      "abs_change": -1236.469,
+      "pct_change": -4.35,
+      "month_abs_change": -3959.379,
+      "month_pct_change": -12.71,
       "timeseries": [
         {
           "date": "2021-11-05",
@@ -51414,6 +51418,10 @@
         {
           "date": "2026-11-04",
           "price": 28437.17
+        },
+        {
+          "date": "2026-11-05",
+          "price": 27200.701
         }
       ],
       "name": "Nasdaq 100",
@@ -51422,12 +51430,12 @@
     },
     "NIFTY50": {
       "symbol": "^NSEI",
-      "current_price": 24401.25,
+      "current_price": 24536.6,
       "prev_day_price": 23960.6,
-      "abs_change": 440.65,
-      "pct_change": 1.84,
-      "month_abs_change": 1625.15,
-      "month_pct_change": 7.14,
+      "abs_change": 576.0,
+      "pct_change": 2.4,
+      "month_abs_change": 1760.5,
+      "month_pct_change": 7.73,
       "timeseries": [
         {
           "date": "2021-11-08",
@@ -56367,7 +56375,7 @@
         },
         {
           "date": "2026-11-05",
-          "price": 24401.25
+          "price": 24536.6
         }
       ],
       "name": "Nifty 50",
@@ -56376,17 +56384,13 @@
     },
     "VIX": {
       "symbol": "^VIX",
-      "current_price": 16.61,
-      "prev_day_price": 20.83,
-      "abs_change": -4.22,
-      "pct_change": -20.26,
-      "month_abs_change": 1.6,
-      "month_pct_change": 10.66,
+      "current_price": 24.55,
+      "prev_day_price": 16.61,
+      "abs_change": 7.94,
+      "pct_change": 47.8,
+      "month_abs_change": 9.47,
+      "month_pct_change": 62.8,
       "timeseries": [
-        {
-          "date": "2021-11-04",
-          "price": 15.44
-        },
         {
           "date": "2021-11-05",
           "price": 16.48
@@ -61410,6 +61414,10 @@
         {
           "date": "2026-11-04",
           "price": 16.61
+        },
+        {
+          "date": "2026-11-05",
+          "price": 24.55
         }
       ],
       "name": "CBOE Volatility Index (VIX)",
@@ -61418,12 +61426,12 @@
     },
     "GOLD": {
       "symbol": "GC=F",
-      "current_price": 4134.0,
+      "current_price": 4106.5,
       "prev_day_price": 4073.0,
-      "abs_change": 61.0,
-      "pct_change": 1.5,
-      "month_abs_change": -6.7,
-      "month_pct_change": -0.16,
+      "abs_change": 33.5,
+      "pct_change": 0.82,
+      "month_abs_change": -34.2,
+      "month_pct_change": -0.83,
       "timeseries": [
         {
           "date": "2021-11-05",
@@ -66455,7 +66463,7 @@
         },
         {
           "date": "2026-11-05",
-          "price": 4134.0
+          "price": 4106.5
         }
       ],
       "name": "Gold (Comex)",
@@ -66464,12 +66472,12 @@
     },
     "BRENT_OIL": {
       "symbol": "BZ=F",
-      "current_price": 93.93,
+      "current_price": 97.07,
       "prev_day_price": 94.62,
-      "abs_change": -0.69,
-      "pct_change": -0.73,
-      "month_abs_change": -6.27,
-      "month_pct_change": -6.26,
+      "abs_change": 2.45,
+      "pct_change": 2.59,
+      "month_abs_change": -3.13,
+      "month_pct_change": -3.12,
       "timeseries": [
         {
           "date": "2021-11-05",
@@ -71501,7 +71509,7 @@
         },
         {
           "date": "2026-11-05",
-          "price": 93.93
+          "price": 97.07
         }
       ],
       "name": "Brent Crude Oil",
@@ -71510,12 +71518,12 @@
     },
     "WTI_OIL": {
       "symbol": "CL=F",
-      "current_price": 86.97,
+      "current_price": 90.53,
       "prev_day_price": 88.12,
-      "abs_change": -1.15,
-      "pct_change": -1.31,
-      "month_abs_change": -1.31,
-      "month_pct_change": -1.48,
+      "abs_change": 2.41,
+      "pct_change": 2.73,
+      "month_abs_change": 2.25,
+      "month_pct_change": 2.55,
       "timeseries": [
         {
           "date": "2021-11-05",
@@ -76543,7 +76551,7 @@
         },
         {
           "date": "2026-11-05",
-          "price": 86.97
+          "price": 90.53
         }
       ],
       "name": "WTI Crude Oil",
