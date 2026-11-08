@@ -1,10 +1,10 @@
 /* AUTO-GENERATED MACROECONOMIC DATA FILE - DO NOT EDIT DIRECTLY */
 const MACRO_DATA = {
   "meta": {
-    "generated_at_utc": "2026-11-08 15:07:15 UTC",
-    "display_time_ist": "08 Nov 2026, 08:37 PM",
-    "display_time_et": "08 Nov 2026, 10:07 AM",
-    "display_time": "08 Nov 2026, 08:37 PM",
+    "generated_at_utc": "2026-11-08 20:25:57 UTC",
+    "display_time_ist": "09 Nov 2026, 01:55 AM",
+    "display_time_et": "08 Nov 2026, 03:25 PM",
+    "display_time": "09 Nov 2026, 01:55 AM",
     "status": "success"
   },
   "treasury": {
@@ -20539,12 +20539,12 @@ const MACRO_DATA = {
   "markets": {
     "USD_JPY": {
       "symbol": "JPY=X",
-      "current_price": 158.425,
+      "current_price": 158.356,
       "prev_day_price": 157.498,
-      "abs_change": 0.927,
-      "pct_change": 0.59,
-      "month_abs_change": 0.362,
-      "month_pct_change": 0.23,
+      "abs_change": 0.858,
+      "pct_change": 0.54,
+      "month_abs_change": 0.293,
+      "month_pct_change": 0.19,
       "timeseries": [
         {
           "date": "2021-11-08",
@@ -25748,7 +25748,7 @@ const MACRO_DATA = {
         },
         {
           "date": "2026-11-08",
-          "price": 158.425
+          "price": 158.356
         }
       ],
       "name": "USD / JPY",
@@ -30978,9 +30978,9 @@ const MACRO_DATA = {
       "current_price": 1.114,
       "prev_day_price": 1.123,
       "abs_change": -0.009,
-      "pct_change": -0.77,
-      "month_abs_change": -0.006,
-      "month_pct_change": -0.51,
+      "pct_change": -0.78,
+      "month_abs_change": -0.007,
+      "month_pct_change": -0.61,
       "timeseries": [
         {
           "date": "2021-11-08",
@@ -36181,6 +36181,10 @@ const MACRO_DATA = {
         {
           "date": "2026-11-06",
           "price": 1.123
+        },
+        {
+          "date": "2026-11-08",
+          "price": 1.114
         }
       ],
       "name": "EUR / USD",
@@ -36189,12 +36193,12 @@ const MACRO_DATA = {
     },
     "GBP_USD": {
       "symbol": "GBPUSD=X",
-      "current_price": 1.336,
-      "prev_day_price": 1.348,
-      "abs_change": -0.012,
-      "pct_change": -0.92,
-      "month_abs_change": 0.015,
-      "month_pct_change": 1.11,
+      "current_price": 1.335,
+      "prev_day_price": 1.346,
+      "abs_change": -0.011,
+      "pct_change": -0.79,
+      "month_abs_change": 0.012,
+      "month_pct_change": 0.93,
       "timeseries": [
         {
           "date": "2021-11-08",
@@ -41395,6 +41399,10 @@ const MACRO_DATA = {
         {
           "date": "2026-11-06",
           "price": 1.346
+        },
+        {
+          "date": "2026-11-08",
+          "price": 1.335
         }
       ],
       "name": "GBP / USD",
