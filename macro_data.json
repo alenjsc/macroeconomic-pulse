@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generated_at_utc": "2026-11-08 05:54:39 UTC",
-    "display_time_ist": "08 Nov 2026, 11:24 AM",
-    "display_time_et": "08 Nov 2026, 12:54 AM",
-    "display_time": "08 Nov 2026, 11:24 AM",
+    "generated_at_utc": "2026-11-08 15:07:15 UTC",
+    "display_time_ist": "08 Nov 2026, 08:37 PM",
+    "display_time_et": "08 Nov 2026, 10:07 AM",
+    "display_time": "08 Nov 2026, 08:37 PM",
     "status": "success"
   },
   "treasury": {
@@ -25756,12 +25756,12 @@
     },
     "USD_INR": {
       "symbol": "USDINR=X",
-      "current_price": 93.91,
+      "current_price": 93.895,
       "prev_day_price": 94.459,
-      "abs_change": -0.549,
-      "pct_change": -0.58,
-      "month_abs_change": -2.913,
-      "month_pct_change": -3.01,
+      "abs_change": -0.564,
+      "pct_change": -0.6,
+      "month_abs_change": -2.928,
+      "month_pct_change": -3.02,
       "timeseries": [
         {
           "date": "2021-11-08",
@@ -30965,7 +30965,7 @@
         },
         {
           "date": "2026-11-08",
-          "price": 93.91
+          "price": 93.895
         }
       ],
       "name": "USD / INR",
@@ -51470,12 +51470,12 @@
     },
     "NIFTY50": {
       "symbol": "^NSEI",
-      "current_price": 25030.35,
-      "prev_day_price": 24536.6,
-      "abs_change": 493.75,
-      "pct_change": 2.01,
-      "month_abs_change": 2427.299,
-      "month_pct_change": 10.74,
+      "current_price": 24986.4,
+      "prev_day_price": 25030.35,
+      "abs_change": -43.95,
+      "pct_change": -0.18,
+      "month_abs_change": 2754.599,
+      "month_pct_change": 12.39,
       "timeseries": [
         {
           "date": "2021-11-08",
@@ -56420,6 +56420,10 @@
         {
           "date": "2026-11-06",
           "price": 25030.35
+        },
+        {
+          "date": "2026-11-08",
+          "price": 24986.4
         }
       ],
       "name": "Nifty 50",
