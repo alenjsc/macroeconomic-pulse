@@ -1,10 +1,10 @@
 /* AUTO-GENERATED MACROECONOMIC DATA FILE - DO NOT EDIT DIRECTLY */
 const MACRO_DATA = {
   "meta": {
-    "generated_at_utc": "2026-11-07 20:11:49 UTC",
-    "display_time_ist": "08 Nov 2026, 01:41 AM",
-    "display_time_et": "07 Nov 2026, 03:11 PM",
-    "display_time": "08 Nov 2026, 01:41 AM",
+    "generated_at_utc": "2026-11-08 05:54:39 UTC",
+    "display_time_ist": "08 Nov 2026, 11:24 AM",
+    "display_time_et": "08 Nov 2026, 12:54 AM",
+    "display_time": "08 Nov 2026, 11:24 AM",
     "status": "success"
   },
   "treasury": {
@@ -25747,7 +25747,7 @@ const MACRO_DATA = {
           "price": 157.498
         },
         {
-          "date": "2026-11-07",
+          "date": "2026-11-08",
           "price": 158.425
         }
       ],
@@ -30965,7 +30965,7 @@ const MACRO_DATA = {
           "price": 94.459
         },
         {
-          "date": "2026-11-07",
+          "date": "2026-11-08",
           "price": 93.91
         }
       ],
