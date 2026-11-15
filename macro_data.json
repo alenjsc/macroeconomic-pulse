@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generated_at_utc": "2026-11-15 15:37:17 UTC",
-    "display_time_ist": "15 Nov 2026, 09:07 PM",
-    "display_time_et": "15 Nov 2026, 10:37 AM",
-    "display_time": "15 Nov 2026, 09:07 PM",
+    "generated_at_utc": "2026-11-15 21:00:08 UTC",
+    "display_time_ist": "16 Nov 2026, 02:30 AM",
+    "display_time_et": "15 Nov 2026, 04:00 PM",
+    "display_time": "16 Nov 2026, 02:30 AM",
     "status": "success"
   },
   "treasury": {
@@ -20602,12 +20602,12 @@
   "markets": {
     "USD_JPY": {
       "symbol": "JPY=X",
-      "current_price": 159.686,
-      "prev_day_price": 159.734,
-      "abs_change": -0.048,
-      "pct_change": -0.03,
-      "month_abs_change": 1.729,
-      "month_pct_change": 1.09,
+      "current_price": 159.545,
+      "prev_day_price": 159.875,
+      "abs_change": -0.33,
+      "pct_change": -0.21,
+      "month_abs_change": 1.402,
+      "month_pct_change": 0.89,
       "timeseries": [
         {
           "date": "2021-11-15",
@@ -25808,6 +25808,10 @@
         {
           "date": "2026-11-13",
           "price": 159.875
+        },
+        {
+          "date": "2026-11-15",
+          "price": 159.545
         }
       ],
       "name": "USD / JPY",
@@ -25816,12 +25820,12 @@
     },
     "USD_INR": {
       "symbol": "USDINR=X",
-      "current_price": 94.24,
+      "current_price": 94.23,
       "prev_day_price": 94.034,
-      "abs_change": 0.206,
-      "pct_change": 0.22,
-      "month_abs_change": -0.285,
-      "month_pct_change": -0.3,
+      "abs_change": 0.196,
+      "pct_change": 0.21,
+      "month_abs_change": -0.295,
+      "month_pct_change": -0.31,
       "timeseries": [
         {
           "date": "2021-11-15",
@@ -31025,7 +31029,7 @@
         },
         {
           "date": "2026-11-15",
-          "price": 94.24
+          "price": 94.23
         }
       ],
       "name": "USD / INR",
@@ -31035,11 +31039,11 @@
     "EUR_USD": {
       "symbol": "EURUSD=X",
       "current_price": 1.103,
-      "prev_day_price": 1.11,
-      "abs_change": -0.007,
-      "pct_change": -0.65,
-      "month_abs_change": -0.017,
-      "month_pct_change": -1.54,
+      "prev_day_price": 1.105,
+      "abs_change": -0.002,
+      "pct_change": -0.17,
+      "month_abs_change": -0.018,
+      "month_pct_change": -1.6,
       "timeseries": [
         {
           "date": "2021-11-15",
@@ -36240,6 +36244,10 @@
         {
           "date": "2026-11-13",
           "price": 1.105
+        },
+        {
+          "date": "2026-11-15",
+          "price": 1.103
         }
       ],
       "name": "EUR / USD",
@@ -36248,12 +36256,12 @@
     },
     "GBP_USD": {
       "symbol": "GBPUSD=X",
-      "current_price": 1.321,
+      "current_price": 1.322,
       "prev_day_price": 1.323,
-      "abs_change": -0.002,
-      "pct_change": -0.14,
-      "month_abs_change": -0.006,
-      "month_pct_change": -0.44,
+      "abs_change": -0.001,
+      "pct_change": -0.05,
+      "month_abs_change": -0.005,
+      "month_pct_change": -0.35,
       "timeseries": [
         {
           "date": "2021-11-15",
@@ -41457,7 +41465,7 @@
         },
         {
           "date": "2026-11-15",
-          "price": 1.321
+          "price": 1.322
         }
       ],
       "name": "GBP / USD",
