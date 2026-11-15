@@ -1,10 +1,10 @@
 /* AUTO-GENERATED MACROECONOMIC DATA FILE - DO NOT EDIT DIRECTLY */
 const MACRO_DATA = {
   "meta": {
-    "generated_at_utc": "2026-11-14 20:40:26 UTC",
-    "display_time_ist": "15 Nov 2026, 02:10 AM",
-    "display_time_et": "14 Nov 2026, 03:40 PM",
-    "display_time": "15 Nov 2026, 02:10 AM",
+    "generated_at_utc": "2026-11-15 06:19:44 UTC",
+    "display_time_ist": "15 Nov 2026, 11:49 AM",
+    "display_time_et": "15 Nov 2026, 01:19 AM",
+    "display_time": "15 Nov 2026, 11:49 AM",
     "status": "success"
   },
   "treasury": {
@@ -31025,7 +31025,7 @@ const MACRO_DATA = {
           "price": 94.034
         },
         {
-          "date": "2026-11-14",
+          "date": "2026-11-15",
           "price": 94.24
         }
       ],
@@ -36250,11 +36250,11 @@ const MACRO_DATA = {
     "GBP_USD": {
       "symbol": "GBPUSD=X",
       "current_price": 1.321,
-      "prev_day_price": 1.328,
-      "abs_change": -0.007,
-      "pct_change": -0.53,
-      "month_abs_change": -0.002,
-      "month_pct_change": -0.16,
+      "prev_day_price": 1.323,
+      "abs_change": -0.002,
+      "pct_change": -0.14,
+      "month_abs_change": -0.006,
+      "month_pct_change": -0.44,
       "timeseries": [
         {
           "date": "2021-11-15",
@@ -41455,6 +41455,10 @@ const MACRO_DATA = {
         {
           "date": "2026-11-13",
           "price": 1.323
+        },
+        {
+          "date": "2026-11-15",
+          "price": 1.321
         }
       ],
       "name": "GBP / USD",
