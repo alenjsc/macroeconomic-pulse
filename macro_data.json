@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generated_at_utc": "2026-11-22 06:38:02 UTC",
-    "display_time_ist": "22 Nov 2026, 12:08 PM",
-    "display_time_et": "22 Nov 2026, 01:38 AM",
-    "display_time": "22 Nov 2026, 12:08 PM",
+    "generated_at_utc": "2026-11-22 16:13:06 UTC",
+    "display_time_ist": "22 Nov 2026, 09:43 PM",
+    "display_time_et": "22 Nov 2026, 11:13 AM",
+    "display_time": "22 Nov 2026, 09:43 PM",
     "status": "success"
   },
   "treasury": {
@@ -25896,12 +25896,12 @@
     },
     "USD_INR": {
       "symbol": "USDINR=X",
-      "current_price": 92.67,
+      "current_price": 92.66,
       "prev_day_price": 93.295,
-      "abs_change": -0.625,
-      "pct_change": -0.67,
-      "month_abs_change": -2.041,
-      "month_pct_change": -2.15,
+      "abs_change": -0.635,
+      "pct_change": -0.68,
+      "month_abs_change": -2.051,
+      "month_pct_change": -2.17,
       "timeseries": [
         {
           "date": "2021-11-22",
@@ -31105,7 +31105,7 @@
         },
         {
           "date": "2026-11-22",
-          "price": 92.67
+          "price": 92.66
         }
       ],
       "name": "USD / INR",
