@@ -1,10 +1,10 @@
 /* AUTO-GENERATED MACROECONOMIC DATA FILE - DO NOT EDIT DIRECTLY */
 const MACRO_DATA = {
   "meta": {
-    "generated_at_utc": "2026-11-22 16:13:06 UTC",
-    "display_time_ist": "22 Nov 2026, 09:43 PM",
-    "display_time_et": "22 Nov 2026, 11:13 AM",
-    "display_time": "22 Nov 2026, 09:43 PM",
+    "generated_at_utc": "2026-11-22 21:44:47 UTC",
+    "display_time_ist": "23 Nov 2026, 03:14 AM",
+    "display_time_et": "22 Nov 2026, 04:44 PM",
+    "display_time": "23 Nov 2026, 03:14 AM",
     "status": "success"
   },
   "treasury": {
@@ -20683,12 +20683,12 @@ const MACRO_DATA = {
   "markets": {
     "USD_JPY": {
       "symbol": "JPY=X",
-      "current_price": 158.512,
-      "prev_day_price": 159.381,
-      "abs_change": -0.869,
-      "pct_change": -0.55,
-      "month_abs_change": 0.38,
-      "month_pct_change": 0.24,
+      "current_price": 158.597,
+      "prev_day_price": 159.707,
+      "abs_change": -1.11,
+      "pct_change": -0.7,
+      "month_abs_change": 2.103,
+      "month_pct_change": 1.34,
       "timeseries": [
         {
           "date": "2021-11-22",
@@ -25889,6 +25889,10 @@ const MACRO_DATA = {
         {
           "date": "2026-11-20",
           "price": 159.707
+        },
+        {
+          "date": "2026-11-22",
+          "price": 158.597
         }
       ],
       "name": "USD / JPY",
