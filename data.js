@@ -1,10 +1,10 @@
 /* AUTO-GENERATED MACROECONOMIC DATA FILE - DO NOT EDIT DIRECTLY */
 const MACRO_DATA = {
   "meta": {
-    "generated_at_utc": "2026-11-25 00:37:28 UTC",
-    "display_time_ist": "25 Nov 2026, 06:07 AM",
-    "display_time_et": "24 Nov 2026, 07:37 PM",
-    "display_time": "25 Nov 2026, 06:07 AM",
+    "generated_at_utc": "2026-11-25 18:37:33 UTC",
+    "display_time_ist": "26 Nov 2026, 12:07 AM",
+    "display_time_et": "25 Nov 2026, 01:37 PM",
+    "display_time": "26 Nov 2026, 12:07 AM",
     "status": "success"
   },
   "treasury": {
@@ -19763,61 +19763,461 @@ const MACRO_DATA = {
     ]
   },
   "us_inflation": {
-    "latest_period": "2026-08",
-    "latest_label": "Aug 2026",
-    "headline_cpi_yoy": 2.74,
-    "delta_headline": 0.12,
-    "core_cpi_yoy": 3.12,
-    "delta_core": -0.05,
+    "latest_period": "2026-09",
+    "latest_label": "Sep 2026",
+    "headline_cpi_yoy": 3.74,
+    "delta_headline": 0.34,
+    "core_cpi_yoy": 2.56,
+    "delta_core": 0.11,
     "fed_target": 2.0,
     "history": [
       {
-        "period": "2025-08",
-        "label": "Aug 2025",
-        "headline_cpi_yoy": 2.58,
+        "period": "2022-01",
+        "label": "Jan 2022",
+        "headline_cpi_index": 281.148,
+        "headline_cpi_yoy": 7.48,
+        "core_cpi_index": 285.996,
+        "core_cpi_yoy": 6.02
+      },
+      {
+        "period": "2022-02",
+        "label": "Feb 2022",
+        "headline_cpi_index": 283.716,
+        "headline_cpi_yoy": 7.87,
+        "core_cpi_index": 288.059,
+        "core_cpi_yoy": 6.41
+      },
+      {
+        "period": "2022-03",
+        "label": "Mar 2022",
+        "headline_cpi_index": 287.504,
+        "headline_cpi_yoy": 8.54,
+        "core_cpi_index": 289.305,
+        "core_cpi_yoy": 6.47
+      },
+      {
+        "period": "2022-04",
+        "label": "Apr 2022",
+        "headline_cpi_index": 289.109,
+        "headline_cpi_yoy": 8.26,
+        "core_cpi_index": 290.846,
+        "core_cpi_yoy": 6.16
+      },
+      {
+        "period": "2022-05",
+        "label": "May 2022",
+        "headline_cpi_index": 292.296,
+        "headline_cpi_yoy": 8.58,
+        "core_cpi_index": 292.506,
+        "core_cpi_yoy": 6.02
+      },
+      {
+        "period": "2022-06",
+        "label": "Jun 2022",
+        "headline_cpi_index": 296.311,
+        "headline_cpi_yoy": 9.06,
+        "core_cpi_index": 294.68,
+        "core_cpi_yoy": 5.92
+      },
+      {
+        "period": "2022-07",
+        "label": "Jul 2022",
+        "headline_cpi_index": 296.276,
+        "headline_cpi_yoy": 8.52,
+        "core_cpi_index": 295.646,
+        "core_cpi_yoy": 5.91
+      },
+      {
+        "period": "2022-08",
+        "label": "Aug 2022",
+        "headline_cpi_index": 296.171,
+        "headline_cpi_yoy": 8.26,
+        "core_cpi_index": 297.178,
+        "core_cpi_yoy": 6.32
+      },
+      {
+        "period": "2022-09",
+        "label": "Sep 2022",
+        "headline_cpi_index": 296.808,
+        "headline_cpi_yoy": 8.2,
+        "core_cpi_index": 298.442,
+        "core_cpi_yoy": 6.63
+      },
+      {
+        "period": "2022-10",
+        "label": "Oct 2022",
+        "headline_cpi_index": 298.012,
+        "headline_cpi_yoy": 7.75,
+        "core_cpi_index": 299.315,
+        "core_cpi_yoy": 6.28
+      },
+      {
+        "period": "2022-11",
+        "label": "Nov 2022",
+        "headline_cpi_index": 297.711,
+        "headline_cpi_yoy": 7.11,
+        "core_cpi_index": 299.6,
+        "core_cpi_yoy": 5.96
+      },
+      {
+        "period": "2022-12",
+        "label": "Dec 2022",
+        "headline_cpi_index": 296.797,
+        "headline_cpi_yoy": 6.45,
+        "core_cpi_index": 300.113,
+        "core_cpi_yoy": 5.71
+      },
+      {
+        "period": "2023-01",
+        "label": "Jan 2023",
+        "headline_cpi_index": 299.17,
+        "headline_cpi_yoy": 6.41,
+        "core_cpi_index": 301.962,
+        "core_cpi_yoy": 5.58
+      },
+      {
+        "period": "2023-02",
+        "label": "Feb 2023",
+        "headline_cpi_index": 300.84,
+        "headline_cpi_yoy": 6.04,
+        "core_cpi_index": 304.011,
+        "core_cpi_yoy": 5.54
+      },
+      {
+        "period": "2023-03",
+        "label": "Mar 2023",
+        "headline_cpi_index": 301.836,
+        "headline_cpi_yoy": 4.98,
+        "core_cpi_index": 305.476,
+        "core_cpi_yoy": 5.59
+      },
+      {
+        "period": "2023-04",
+        "label": "Apr 2023",
+        "headline_cpi_index": 303.363,
+        "headline_cpi_yoy": 4.93,
+        "core_cpi_index": 306.899,
+        "core_cpi_yoy": 5.52
+      },
+      {
+        "period": "2023-05",
+        "label": "May 2023",
+        "headline_cpi_index": 304.127,
+        "headline_cpi_yoy": 4.05,
+        "core_cpi_index": 308.096,
+        "core_cpi_yoy": 5.33
+      },
+      {
+        "period": "2023-06",
+        "label": "Jun 2023",
+        "headline_cpi_index": 305.109,
+        "headline_cpi_yoy": 2.97,
+        "core_cpi_index": 308.91,
+        "core_cpi_yoy": 4.83
+      },
+      {
+        "period": "2023-07",
+        "label": "Jul 2023",
+        "headline_cpi_index": 305.691,
+        "headline_cpi_yoy": 3.18,
+        "core_cpi_index": 309.402,
+        "core_cpi_yoy": 4.65
+      },
+      {
+        "period": "2023-08",
+        "label": "Aug 2023",
+        "headline_cpi_index": 307.026,
+        "headline_cpi_yoy": 3.67,
+        "core_cpi_index": 310.103,
+        "core_cpi_yoy": 4.35
+      },
+      {
+        "period": "2023-09",
+        "label": "Sep 2023",
+        "headline_cpi_index": 307.789,
+        "headline_cpi_yoy": 3.7,
+        "core_cpi_index": 310.817,
+        "core_cpi_yoy": 4.15
+      },
+      {
+        "period": "2023-10",
+        "label": "Oct 2023",
+        "headline_cpi_index": 307.671,
+        "headline_cpi_yoy": 3.24,
+        "core_cpi_index": 311.38,
+        "core_cpi_yoy": 4.03
+      },
+      {
+        "period": "2023-11",
+        "label": "Nov 2023",
+        "headline_cpi_index": 307.051,
+        "headline_cpi_yoy": 3.14,
+        "core_cpi_index": 311.606,
+        "core_cpi_yoy": 4.01
+      },
+      {
+        "period": "2023-12",
+        "label": "Dec 2023",
+        "headline_cpi_index": 306.746,
+        "headline_cpi_yoy": 3.35,
+        "core_cpi_index": 311.907,
+        "core_cpi_yoy": 3.93
+      },
+      {
+        "period": "2024-01",
+        "label": "Jan 2024",
+        "headline_cpi_index": 308.417,
+        "headline_cpi_yoy": 3.09,
+        "core_cpi_index": 313.623,
+        "core_cpi_yoy": 3.86
+      },
+      {
+        "period": "2024-02",
+        "label": "Feb 2024",
+        "headline_cpi_index": 310.326,
+        "headline_cpi_yoy": 3.15,
+        "core_cpi_index": 315.419,
+        "core_cpi_yoy": 3.75
+      },
+      {
+        "period": "2024-03",
+        "label": "Mar 2024",
+        "headline_cpi_index": 312.332,
+        "headline_cpi_yoy": 3.48,
+        "core_cpi_index": 317.088,
+        "core_cpi_yoy": 3.8
+      },
+      {
+        "period": "2024-04",
+        "label": "Apr 2024",
+        "headline_cpi_index": 313.548,
+        "headline_cpi_yoy": 3.36,
+        "core_cpi_index": 317.978,
+        "core_cpi_yoy": 3.61
+      },
+      {
+        "period": "2024-05",
+        "label": "May 2024",
+        "headline_cpi_index": 314.069,
+        "headline_cpi_yoy": 3.27,
+        "core_cpi_index": 318.629,
+        "core_cpi_yoy": 3.42
+      },
+      {
+        "period": "2024-06",
+        "label": "Jun 2024",
+        "headline_cpi_index": 314.175,
+        "headline_cpi_yoy": 2.97,
+        "core_cpi_index": 319.003,
+        "core_cpi_yoy": 3.27
+      },
+      {
+        "period": "2024-07",
+        "label": "Jul 2024",
+        "headline_cpi_index": 314.54,
+        "headline_cpi_yoy": 2.89,
+        "core_cpi_index": 319.214,
+        "core_cpi_yoy": 3.17
+      },
+      {
+        "period": "2024-08",
+        "label": "Aug 2024",
+        "headline_cpi_index": 314.796,
+        "headline_cpi_yoy": 2.53,
+        "core_cpi_index": 320.017,
         "core_cpi_yoy": 3.2
       },
       {
-        "period": "2025-10",
-        "label": "Oct 2025",
-        "headline_cpi_yoy": 2.62,
-        "core_cpi_yoy": 3.25
+        "period": "2024-09",
+        "label": "Sep 2024",
+        "headline_cpi_index": 315.301,
+        "headline_cpi_yoy": 2.44,
+        "core_cpi_index": 321.109,
+        "core_cpi_yoy": 3.31
+      },
+      {
+        "period": "2024-10",
+        "label": "Oct 2024",
+        "headline_cpi_index": 315.664,
+        "headline_cpi_yoy": 2.6,
+        "core_cpi_index": 321.758,
+        "core_cpi_yoy": 3.33
+      },
+      {
+        "period": "2024-11",
+        "label": "Nov 2024",
+        "headline_cpi_index": 315.493,
+        "headline_cpi_yoy": 2.75,
+        "core_cpi_index": 321.947,
+        "core_cpi_yoy": 3.32
+      },
+      {
+        "period": "2024-12",
+        "label": "Dec 2024",
+        "headline_cpi_index": 315.605,
+        "headline_cpi_yoy": 2.89,
+        "core_cpi_index": 322.007,
+        "core_cpi_yoy": 3.24
+      },
+      {
+        "period": "2025-01",
+        "label": "Jan 2025",
+        "headline_cpi_index": 317.671,
+        "headline_cpi_yoy": 3.0,
+        "core_cpi_index": 323.842,
+        "core_cpi_yoy": 3.26
+      },
+      {
+        "period": "2025-02",
+        "label": "Feb 2025",
+        "headline_cpi_index": 319.082,
+        "headline_cpi_yoy": 2.82,
+        "core_cpi_index": 325.252,
+        "core_cpi_yoy": 3.12
+      },
+      {
+        "period": "2025-03",
+        "label": "Mar 2025",
+        "headline_cpi_index": 319.799,
+        "headline_cpi_yoy": 2.39,
+        "core_cpi_index": 325.933,
+        "core_cpi_yoy": 2.79
+      },
+      {
+        "period": "2025-04",
+        "label": "Apr 2025",
+        "headline_cpi_index": 320.795,
+        "headline_cpi_yoy": 2.31,
+        "core_cpi_index": 326.815,
+        "core_cpi_yoy": 2.78
+      },
+      {
+        "period": "2025-05",
+        "label": "May 2025",
+        "headline_cpi_index": 321.465,
+        "headline_cpi_yoy": 2.35,
+        "core_cpi_index": 327.509,
+        "core_cpi_yoy": 2.79
+      },
+      {
+        "period": "2025-06",
+        "label": "Jun 2025",
+        "headline_cpi_index": 322.561,
+        "headline_cpi_yoy": 2.67,
+        "core_cpi_index": 328.364,
+        "core_cpi_yoy": 2.93
+      },
+      {
+        "period": "2025-07",
+        "label": "Jul 2025",
+        "headline_cpi_index": 323.048,
+        "headline_cpi_yoy": 2.7,
+        "core_cpi_index": 328.98,
+        "core_cpi_yoy": 3.06
+      },
+      {
+        "period": "2025-08",
+        "label": "Aug 2025",
+        "headline_cpi_index": 323.976,
+        "headline_cpi_yoy": 2.92,
+        "core_cpi_index": 329.97,
+        "core_cpi_yoy": 3.11
+      },
+      {
+        "period": "2025-09",
+        "label": "Sep 2025",
+        "headline_cpi_index": 324.8,
+        "headline_cpi_yoy": 3.01,
+        "core_cpi_index": 330.804,
+        "core_cpi_yoy": 3.02
+      },
+      {
+        "period": "2025-11",
+        "label": "Nov 2025",
+        "headline_cpi_index": 324.122,
+        "headline_cpi_yoy": 2.74,
+        "core_cpi_index": 330.425,
+        "core_cpi_yoy": 2.63
       },
       {
         "period": "2025-12",
         "label": "Dec 2025",
-        "headline_cpi_yoy": 2.85,
-        "core_cpi_yoy": 3.28
+        "headline_cpi_index": 324.054,
+        "headline_cpi_yoy": 2.68,
+        "core_cpi_index": 330.506,
+        "core_cpi_yoy": 2.64
+      },
+      {
+        "period": "2026-01",
+        "label": "Jan 2026",
+        "headline_cpi_index": 325.252,
+        "headline_cpi_yoy": 2.39,
+        "core_cpi_index": 331.95,
+        "core_cpi_yoy": 2.5
       },
       {
         "period": "2026-02",
         "label": "Feb 2026",
-        "headline_cpi_yoy": 2.7,
-        "core_cpi_yoy": 3.18
+        "headline_cpi_index": 326.785,
+        "headline_cpi_yoy": 2.41,
+        "core_cpi_index": 333.242,
+        "core_cpi_yoy": 2.46
+      },
+      {
+        "period": "2026-03",
+        "label": "Mar 2026",
+        "headline_cpi_index": 330.213,
+        "headline_cpi_yoy": 3.26,
+        "core_cpi_index": 334.391,
+        "core_cpi_yoy": 2.6
       },
       {
         "period": "2026-04",
         "label": "Apr 2026",
-        "headline_cpi_yoy": 2.55,
-        "core_cpi_yoy": 3.14
+        "headline_cpi_index": 333.02,
+        "headline_cpi_yoy": 3.81,
+        "core_cpi_index": 335.803,
+        "core_cpi_yoy": 2.75
+      },
+      {
+        "period": "2026-05",
+        "label": "May 2026",
+        "headline_cpi_index": 335.123,
+        "headline_cpi_yoy": 4.25,
+        "core_cpi_index": 336.846,
+        "core_cpi_yoy": 2.85
       },
       {
         "period": "2026-06",
         "label": "Jun 2026",
-        "headline_cpi_yoy": 2.6,
-        "core_cpi_yoy": 3.15
+        "headline_cpi_index": 333.952,
+        "headline_cpi_yoy": 3.53,
+        "core_cpi_index": 336.882,
+        "core_cpi_yoy": 2.59
       },
       {
         "period": "2026-07",
         "label": "Jul 2026",
-        "headline_cpi_yoy": 2.62,
-        "core_cpi_yoy": 3.17
+        "headline_cpi_index": 333.918,
+        "headline_cpi_yoy": 3.36,
+        "core_cpi_index": 337.133,
+        "core_cpi_yoy": 2.48
       },
       {
         "period": "2026-08",
         "label": "Aug 2026",
-        "headline_cpi_yoy": 2.74,
-        "core_cpi_yoy": 3.12
+        "headline_cpi_index": 334.98,
+        "headline_cpi_yoy": 3.4,
+        "core_cpi_index": 338.041,
+        "core_cpi_yoy": 2.45
+      },
+      {
+        "period": "2026-09",
+        "label": "Sep 2026",
+        "headline_cpi_index": 336.94,
+        "headline_cpi_yoy": 3.74,
+        "core_cpi_index": 339.287,
+        "core_cpi_yoy": 2.56
       }
     ]
   },
@@ -20315,12 +20715,12 @@ const MACRO_DATA = {
   "markets": {
     "USD_JPY": {
       "symbol": "JPY=X",
-      "current_price": 159.263,
+      "current_price": 159.12,
       "prev_day_price": 159.009,
-      "abs_change": 0.254,
-      "pct_change": 0.16,
-      "month_abs_change": 1.735,
-      "month_pct_change": 1.1,
+      "abs_change": 0.111,
+      "pct_change": 0.07,
+      "month_abs_change": 1.592,
+      "month_pct_change": 1.01,
       "timeseries": [
         {
           "date": "2021-11-25",
@@ -25520,7 +25920,7 @@ const MACRO_DATA = {
         },
         {
           "date": "2026-11-25",
-          "price": 159.263
+          "price": 159.12
         }
       ],
       "name": "USD / JPY",
@@ -25529,12 +25929,12 @@ const MACRO_DATA = {
     },
     "USD_INR": {
       "symbol": "USDINR=X",
-      "current_price": 92.9,
+      "current_price": 92.22,
       "prev_day_price": 92.915,
-      "abs_change": -0.015,
-      "pct_change": -0.02,
-      "month_abs_change": -2.287,
-      "month_pct_change": -2.4,
+      "abs_change": -0.695,
+      "pct_change": -0.75,
+      "month_abs_change": -2.967,
+      "month_pct_change": -3.12,
       "timeseries": [
         {
           "date": "2021-11-25",
@@ -30734,7 +31134,7 @@ const MACRO_DATA = {
         },
         {
           "date": "2026-11-25",
-          "price": 92.9
+          "price": 92.22
         }
       ],
       "name": "USD / INR",
@@ -30743,12 +31143,12 @@ const MACRO_DATA = {
     },
     "EUR_USD": {
       "symbol": "EURUSD=X",
-      "current_price": 1.097,
+      "current_price": 1.099,
       "prev_day_price": 1.091,
-      "abs_change": 0.006,
-      "pct_change": 0.5,
-      "month_abs_change": -0.02,
-      "month_pct_change": -1.84,
+      "abs_change": 0.008,
+      "pct_change": 0.71,
+      "month_abs_change": -0.018,
+      "month_pct_change": -1.64,
       "timeseries": [
         {
           "date": "2021-11-25",
@@ -35948,7 +36348,7 @@ const MACRO_DATA = {
         },
         {
           "date": "2026-11-25",
-          "price": 1.096
+          "price": 1.099
         }
       ],
       "name": "EUR / USD",
@@ -35957,12 +36357,12 @@ const MACRO_DATA = {
     },
     "GBP_USD": {
       "symbol": "GBPUSD=X",
-      "current_price": 1.311,
+      "current_price": 1.312,
       "prev_day_price": 1.303,
-      "abs_change": 0.008,
-      "pct_change": 0.62,
-      "month_abs_change": -0.024,
-      "month_pct_change": -1.79,
+      "abs_change": 0.01,
+      "pct_change": 0.73,
+      "month_abs_change": -0.022,
+      "month_pct_change": -1.69,
       "timeseries": [
         {
           "date": "2021-11-25",
@@ -41162,7 +41562,7 @@ const MACRO_DATA = {
         },
         {
           "date": "2026-11-25",
-          "price": 1.311
+          "price": 1.312
         }
       ],
       "name": "GBP / USD",
@@ -41171,12 +41571,12 @@ const MACRO_DATA = {
     },
     "SP500": {
       "symbol": "^GSPC",
-      "current_price": 7201.09,
-      "prev_day_price": 7237.17,
-      "abs_change": -36.08,
-      "pct_change": -0.5,
-      "month_abs_change": -475.68,
-      "month_pct_change": -6.2,
+      "current_price": 7162.88,
+      "prev_day_price": 7201.09,
+      "abs_change": -38.21,
+      "pct_change": -0.53,
+      "month_abs_change": -559.72,
+      "month_pct_change": -7.25,
       "timeseries": [
         {
           "date": "2021-11-26",
@@ -46193,6 +46593,10 @@ const MACRO_DATA = {
         {
           "date": "2026-11-24",
           "price": 7201.09
+        },
+        {
+          "date": "2026-11-25",
+          "price": 7162.88
         }
       ],
       "name": "S&P 500",
@@ -46201,12 +46605,12 @@ const MACRO_DATA = {
     },
     "NASDAQ100": {
       "symbol": "^NDX",
-      "current_price": 26214.168,
-      "prev_day_price": 26746.1,
-      "abs_change": -531.932,
-      "pct_change": -1.99,
-      "month_abs_change": -3059.232,
-      "month_pct_change": -10.45,
+      "current_price": 25849.799,
+      "prev_day_price": 26214.17,
+      "abs_change": -364.371,
+      "pct_change": -1.39,
+      "month_abs_change": -3801.64,
+      "month_pct_change": -12.82,
       "timeseries": [
         {
           "date": "2021-11-26",
@@ -51222,7 +51626,11 @@ const MACRO_DATA = {
         },
         {
           "date": "2026-11-24",
-          "price": 26214.168
+          "price": 26214.17
+        },
+        {
+          "date": "2026-11-25",
+          "price": 25849.799
         }
       ],
       "name": "Nasdaq 100",
@@ -51231,21 +51639,13 @@ const MACRO_DATA = {
     },
     "NIFTY50": {
       "symbol": "^NSEI",
-      "current_price": 25349.65,
+      "current_price": 25819.25,
       "prev_day_price": 25800.6,
-      "abs_change": -450.95,
-      "pct_change": -1.75,
-      "month_abs_change": 2662.0,
-      "month_pct_change": 11.73,
+      "abs_change": 18.65,
+      "pct_change": 0.07,
+      "month_abs_change": 3131.6,
+      "month_pct_change": 13.8,
       "timeseries": [
-        {
-          "date": "2021-11-23",
-          "price": 17503.35
-        },
-        {
-          "date": "2021-11-24",
-          "price": 17415.051
-        },
         {
           "date": "2021-11-25",
           "price": 17536.25
@@ -56189,17 +56589,13 @@ const MACRO_DATA = {
     },
     "VIX": {
       "symbol": "^VIX",
-      "current_price": 26.36,
-      "prev_day_price": 26.62,
-      "abs_change": -0.26,
-      "pct_change": -0.98,
-      "month_abs_change": 7.97,
-      "month_pct_change": 43.34,
+      "current_price": 28.72,
+      "prev_day_price": 26.36,
+      "abs_change": 2.36,
+      "pct_change": 8.95,
+      "month_abs_change": 11.2,
+      "month_pct_change": 63.93,
       "timeseries": [
-        {
-          "date": "2021-11-24",
-          "price": 18.58
-        },
         {
           "date": "2021-11-26",
           "price": 28.62
@@ -61223,6 +61619,10 @@ const MACRO_DATA = {
         {
           "date": "2026-11-24",
           "price": 26.36
+        },
+        {
+          "date": "2026-11-25",
+          "price": 28.72
         }
       ],
       "name": "CBOE Volatility Index (VIX)",
@@ -61231,17 +61631,13 @@ const MACRO_DATA = {
     },
     "GOLD": {
       "symbol": "GC=F",
-      "current_price": 3538.7,
-      "prev_day_price": 3651.4,
-      "abs_change": -112.7,
-      "pct_change": -3.09,
-      "month_abs_change": -499.7,
-      "month_pct_change": -12.37,
+      "current_price": 3558.0,
+      "prev_day_price": 3561.9,
+      "abs_change": -3.9,
+      "pct_change": -0.11,
+      "month_abs_change": -516.6,
+      "month_pct_change": -12.68,
       "timeseries": [
-        {
-          "date": "2021-11-24",
-          "price": 1784.3
-        },
         {
           "date": "2021-11-26",
           "price": 1785.5
@@ -66267,8 +66663,12 @@ const MACRO_DATA = {
           "price": 3651.4
         },
         {
+          "date": "2026-11-24",
+          "price": 3561.9
+        },
+        {
           "date": "2026-11-25",
-          "price": 3538.7
+          "price": 3558.0
         }
       ],
       "name": "Gold (Comex)",
@@ -66277,17 +66677,13 @@ const MACRO_DATA = {
     },
     "BRENT_OIL": {
       "symbol": "BZ=F",
-      "current_price": 88.51,
-      "prev_day_price": 89.37,
-      "abs_change": -0.86,
-      "pct_change": -0.96,
-      "month_abs_change": -27.3,
-      "month_pct_change": -23.57,
+      "current_price": 90.19,
+      "prev_day_price": 91.4,
+      "abs_change": -1.21,
+      "pct_change": -1.32,
+      "month_abs_change": -23.69,
+      "month_pct_change": -20.8,
       "timeseries": [
-        {
-          "date": "2021-11-24",
-          "price": 82.25
-        },
         {
           "date": "2021-11-26",
           "price": 72.72
@@ -71313,8 +71709,12 @@ const MACRO_DATA = {
           "price": 89.37
         },
         {
+          "date": "2026-11-24",
+          "price": 91.4
+        },
+        {
           "date": "2026-11-25",
-          "price": 88.51
+          "price": 90.19
         }
       ],
       "name": "Brent Crude Oil",
@@ -71323,17 +71723,13 @@ const MACRO_DATA = {
     },
     "WTI_OIL": {
       "symbol": "CL=F",
-      "current_price": 81.7,
-      "prev_day_price": 80.17,
-      "abs_change": 1.53,
-      "pct_change": 1.91,
-      "month_abs_change": -20.06,
-      "month_pct_change": -19.71,
+      "current_price": 83.47,
+      "prev_day_price": 82.05,
+      "abs_change": 1.42,
+      "pct_change": 1.73,
+      "month_abs_change": -16.43,
+      "month_pct_change": -16.45,
       "timeseries": [
-        {
-          "date": "2021-11-24",
-          "price": 78.39
-        },
         {
           "date": "2021-11-26",
           "price": 68.15
@@ -76355,8 +76751,12 @@ const MACRO_DATA = {
           "price": 80.17
         },
         {
+          "date": "2026-11-24",
+          "price": 82.05
+        },
+        {
           "date": "2026-11-25",
-          "price": 81.7
+          "price": 83.47
         }
       ],
       "name": "WTI Crude Oil",
